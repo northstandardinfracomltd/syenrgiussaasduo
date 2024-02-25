@@ -201,7 +201,11 @@ background: purple;
       
       
       
-      
+      .navtank {
+  position: sticky;
+  top: 0; /* Spécifiez la distance à partir du haut de la fenêtre où la div deviendra collante */
+        background: white;
+}
       
       
         .container9 {
@@ -212,6 +216,7 @@ background: purple;
 max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+          
         }
 
         .column9 {
@@ -244,6 +249,45 @@ max-width: 1200px;
         }
 
       
+      
+              .dropdownS {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-inputS {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dropdown-listS {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            max-height: 150px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .dropdown-list-itemS {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-list-itemS:hover {
+            background-color: #f0f0f0;
+        }
+      
+      
     </style>
     <title>Centered Container</title>
   </head>
@@ -254,7 +298,7 @@ max-width: 1200px;
   <body>
     
     
-    
+    <div class="navtank">
 <div class="container9">
     <div class="column9">
         <img src="chemin/vers/votre/image.jpg" alt="Image">
@@ -269,12 +313,69 @@ max-width: 1200px;
         </div>
     </div>
 </div>
-    
+    </div>
     
     <div class="purple">
       <div class="container">
         <h1 class="main-title">Grand Titre</h1>
         <h2 class="sub-title">Sous-Titre</h2>
+        
+        
+        <div class="dropdownS">
+    <input type="text" class="dropdown-inputS" placeholder="Saisir ici">
+    <div class="dropdown-listS">
+        <div class="dropdown-list-itemS" data-link="/contact">Un crabe rouge</div>
+        <div class="dropdown-list-itemS" data-link="/contact">Un arbre vert</div>
+        <div class="dropdown-list-itemS" data-link="/contact">Un éléphant gris</div>
+        <div class="dropdown-list-itemS" data-link="/contact">Un flamant rose</div>
+    </div>
+</div>
+
+<script>
+    const dropdownInput = document.querySelector('.dropdown-inputS');
+    const dropdownList = document.querySelector('.dropdown-listS');
+
+    dropdownInput.addEventListener('input', function () {
+        const inputValue = this.value.toLowerCase().trim();
+        const items = document.querySelectorAll('.dropdown-list-itemS');
+
+        items.forEach(item => {
+            const itemText = item.innerText.toLowerCase();
+            if (itemText.includes(inputValue)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        // Ajouter le dernier item personnalisé
+        const customItem = document.createElement('div');
+        customItem.className = 'dropdown-list-itemS';
+        customItem.innerText = inputValue;
+        customItem.dataset.link = '/contact';
+        dropdownList.appendChild(customItem);
+    });
+
+    dropdownInput.addEventListener('focus', function () {
+        dropdownList.style.display = 'block';
+    });
+
+    dropdownInput.addEventListener('blur', function () {
+        setTimeout(() => {
+            dropdownList.style.display = 'none';
+        }, 200);
+    });
+
+    dropdownList.addEventListener('click', function (event) {
+        const target = event.target;
+        const link = target.dataset.link;
+        if (link) {
+            window.location.href = link;
+        }
+    });
+</script>
+        
+        
         <p class="text-sub-title">Free Ideation Session</p>
       </div>
       
