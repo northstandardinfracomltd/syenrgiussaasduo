@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      
+      
+::selection {
+background-color: #ffd00082;
+color: #1b1b20;
+}
+
+      
       body {
 background: white;
         margin: 0px !important;
@@ -33,11 +41,23 @@ background: white;
       
       
       .purple {
-background: purple;
+  background: linear-gradient(90deg, #320e53 10%, #28044a 90%);
         padding-top: 20px;
         padding-bottom: 20px;
       }
       
+      
+      .purple::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/themelogo9982392832983923032238929323KGB.svg?v=1708896593443');
+  background-size: cover;
+  opacity: 0.08;
+}
           .grid-container {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -405,7 +425,7 @@ max-width: 1200px;
         <div class="grid-container">
     <!-- Première ligne -->
     <div class="grid-item">
-      <img src="chemin/vers/icone1.png" alt="Icône 1" class="icon">
+      <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Icon20Red20mic.svg?v=1708895895820" alt="Icône 1" class="icon">
       <div class="text">Texte 1</div>
     </div>
     <div class="grid-item">
