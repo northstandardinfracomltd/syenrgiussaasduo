@@ -63,6 +63,136 @@ background: purple;
       margin-top: 10px;
       color: #333;
     }
+      
+      
+      
+                  
+              /* Style général du conteneur grid */
+        .parkles {
+          background: lightblue;
+        }
+      
+      
+      
+              /* Style général du conteneur grid */
+        .container2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+                      max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+          padding-top: 20px;
+                    padding-bottom: 20px;
+        }
+
+        /* Style des divs internes */
+        .item2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Style de l'image */
+        .item2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+      
+      
+      
+
+      
+                    /* Style général du conteneur grid */
+        .carrelage {
+          background: lightgrey;
+        }
+      
+      
+              /* Style général du conteneur grid */
+        .container3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+                                max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Style de la colonne de gauche */
+        .left-column3 {
+            /* Pour centrer verticalement le contenu */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Style de la colonne de droite (accordéon) */
+        .right-column3 {
+            /* Pour centrer verticalement le contenu */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Style de l'accordéon */
+        .accordion3 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Style des items de l'accordéon */
+        .accordion-item3 {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        /* Style des titres des items */
+        .accordion-item-title3 {
+            background-color: #f5f5f5;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Style des contenus des items (initialement cachés) */
+        .accordion-item-content3 {
+            display: none;
+            padding: 10px;
+        }
+
+        /* Style de l'image */
+        .left-column3 img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+      
+      
+      .columnX {
+  padding: 10px;
+}
+      
+.footer-containerX {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+                                  max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+}
+
+.columnX {
+  padding: 10px;
+}
+      
     </style>
     <title>Centered Container</title>
   </head>
@@ -125,32 +255,131 @@ background: purple;
     
     
      <div class="parkles">
-        <div class="container">
+        <div class="container2">
         <!-- Première div interne -->
-        <div class="item">
+        <div class="item2">
             <img src="chemin/vers/image1.jpg" alt="Image 1">
             <p>Description de la première image.</p>
         </div>
 
         <!-- Deuxième div interne -->
-        <div class="item">
+        <div class="item2">
             <img src="chemin/vers/image2.jpg" alt="Image 2">
             <p>Description de la deuxième image.</p>
         </div>
 
         <!-- Troisième div interne -->
-        <div class="item">
+        <div class="item2">
             <img src="chemin/vers/image3.jpg" alt="Image 3">
             <p>Description de la troisième image.</p>
         </div>
 
         <!-- Quatrième div interne -->
-        <div class="item">
+        <div class="item2">
             <img src="chemin/vers/image4.jpg" alt="Image 4">
             <p>Description de la quatrième image.</p>
         </div>
     </div>
        </div>
+    
+    
+    
+    
+            <div class="carrelage">
+    
+    
+        <div class="container3">
+        <!-- Colonne de gauche -->
+        <div class="left-column3">
+            <h1>Gros Titre</h1>
+            <h2>Sous-titre</h2>
+            <img src="chemin/vers/image.jpg" alt="Image">
+        </div>
+
+        <!-- Colonne de droite (accordéon) -->
+        <div class="right-column3">
+            <div class="accordion3">
+                <!-- Item 1 -->
+                <div class="accordion-item3">
+                    <div class="accordion-item-title3" onclick="toggleAccordion(this)">Question 1</div>
+                    <div class="accordion-item-content3">Réponse à la question 1.</div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item3">
+                    <div class="accordion-item-title3" onclick="toggleAccordion(this)">Question 2</div>
+                    <div class="accordion-item-content3">Réponse à la question 2.</div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item3">
+                    <div class="accordion-item-title3" onclick="toggleAccordion(this)">Question 3</div>
+                    <div class="accordion-item-content3">Réponse à la question 3.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        // Fonction pour basculer l'état de l'accordéon (ouvrir/fermer)
+        function toggleAccordion(title) {
+            const content = title.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+                // Fermer les autres items ouverts
+                const allContents = document.querySelectorAll('.accordion-item-content3');
+                allContents.forEach(item => {
+                    if (item !== content) {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+  <footer class="footer-containerX">
+    <div class="columnX">
+      <h2>Section 1</h2>
+      <ul>
+        <li><a href="#">Lien 1</a></li>
+        <li><a href="#">Lien 2</a></li>
+        <li><a href="#">Lien 3</a></li>
+      </ul>
+    </div>
+    <div class="columnX">
+      <h2>Section 2</h2>
+      <ul>
+        <li><a href="#">Lien 1</a></li>
+        <li><a href="#">Lien 2</a></li>
+        <li><a href="#">Lien 3</a></li>
+      </ul>
+    </div>
+    <div class="columnX">
+      <h2>Section 3</h2>
+      <ul>
+        <li><a href="#">Lien 1</a></li>
+        <li><a href="#">Lien 2</a></li>
+        <li><a href="#">Lien 3</a></li>
+      </ul>
+    </div>
+    <div class="columnX">
+      <h2>Section 4</h2>
+      <ul>
+        <li><a href="#">Lien 1</a></li>
+        <li><a href="#">Lien 2</a></li>
+        <li><a href="#">Lien 3</a></li>
+      </ul>
+    </div>
+  </footer>
+    
+    
     
   </body>
 </html>
