@@ -1,72 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+background: white;
+        margin: 0px !important;
+      }
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+      .container {
+        text-align: center;
+      }
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
+      .main-title {
+        font-size: 2em;
+        font-weight: bold;
+      }
 
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+      .sub-title {
+        font-size: 1.5em;
+        color: #555;
+      }
+      
+      
+      
+      .text-sub-title {
+        font-size: 1em;
+        color: #555;
+      }
+      
+      
+      
+      .purple {
+background: purple;
+      }
+      
+          .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
+      padding: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+    }
 
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
+    .grid-item {
+      text-align: left;
+      border: 1px solid grey;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .icon {
+      width: 50px; /* Ajustez la taille de l'icône selon vos besoins */
+      height: 50px;
+    }
+
+    .text {
+      margin-top: 10px;
+      color: #333;
+    }
+    </style>
+    <title>Centered Container</title>
   </head>
   <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
+    <div class="purple">
+      <div class="container">
+        <h1 class="main-title">Grand Titre</h1>
+        <h2 class="sub-title">Sous-Titre</h2>
+        <p class="text-sub-title">Free Ideation Session</p>
       </div>
+      
+        <div class="grid-container">
+    <!-- Première ligne -->
+    <div class="grid-item">
+      <img src="chemin/vers/icone1.png" alt="Icône 1" class="icon">
+      <div class="text">Texte 1</div>
     </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
+    <div class="grid-item">
+      <img src="chemin/vers/icone2.png" alt="Icône 2" class="icon">
+      <div class="text">Texte 2</div>
+    </div>
+    <div class="grid-item">
+      <img src="chemin/vers/icone3.png" alt="Icône 3" class="icon">
+      <div class="text">Texte 3</div>
+    </div>
+    <div class="grid-item">
+      <img src="chemin/vers/icone4.png" alt="Icône 4" class="icon">
+      <div class="text">Texte 4</div>
+    </div>
+    <div class="grid-item">
+      <img src="chemin/vers/icone5.png" alt="Icône 5" class="icon">
+      <div class="text">Texte 5</div>
+    </div>
+    <!-- Deuxième ligne -->
+    <div class="grid-item">
+      <img src="chemin/vers/icone6.png" alt="Icône 6" class="icon">
+      <div class="text">Texte 6</div>
+    </div>
+    <div class="grid-item">
+      <img src="chemin/vers/icone7.png" alt="Icône 7" class="icon">
+      <div class="text">Texte 7</div>
+    </div>
+    <div class="grid-item">
+      <img src="chemin/vers/icone8.png" alt="Icône 8" class="icon">
+      <div class="text">Texte 8</div>
+    </div>
+    <div class="grid-item">
+      <img src="chemin/vers/icone9.png" alt="Icône 9" class="icon">
+      <div class="text">Texte 9</div>
+    </div>
+    <div class="grid-item">
+      <img src="chemin/vers/icone10.png" alt="Icône 10" class="icon">
+      <div class="text">Texte 10</div>
+    </div>
+  </div>
+
+      
+      
+    </div>
+    
+    
+     <div class="parkles">
+        <div class="container">
+        <!-- Première div interne -->
+        <div class="item">
+            <img src="chemin/vers/image1.jpg" alt="Image 1">
+            <p>Description de la première image.</p>
+        </div>
+
+        <!-- Deuxième div interne -->
+        <div class="item">
+            <img src="chemin/vers/image2.jpg" alt="Image 2">
+            <p>Description de la deuxième image.</p>
+        </div>
+
+        <!-- Troisième div interne -->
+        <div class="item">
+            <img src="chemin/vers/image3.jpg" alt="Image 3">
+            <p>Description de la troisième image.</p>
+        </div>
+
+        <!-- Quatrième div interne -->
+        <div class="item">
+            <img src="chemin/vers/image4.jpg" alt="Image 4">
+            <p>Description de la quatrième image.</p>
+        </div>
+    </div>
+       </div>
+    
   </body>
 </html>
