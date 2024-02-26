@@ -354,6 +354,31 @@ background-color: rgb(12 163 127);
     }
       
       
+      
+                .icon-button43 {
+      display: inline-block;
+      background-color: transparent;
+      padding: 10px;
+            max-height: 18px !important;
+      border-radius: 100px;
+            margin-top: 7px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+                  margin-right: 10px;
+    }
+
+    .icon-button43:hover {
+      background-color: #2980b9;
+    }
+
+    .icon43 {
+      width: 18px;
+      height: 18px;
+      background-image: url('https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/plus-2.svg?v=1708950027459');
+      background-size: cover;
+    }
+      
+      
           .logo {
       max-width: 280px;
             margin-right: auto;
@@ -366,6 +391,30 @@ background-color: rgb(12 163 127);
             background-repeat: no-repeat; /* Empêche la répétition de l'image */
         }
       
+      
+
+        #popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        #close-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+      
     </style>
     <title>Centered Container</title>
   </head>
@@ -374,6 +423,8 @@ background-color: rgb(12 163 127);
   
   
   <body>
+    
+
 
     
     <div class="purple">
@@ -387,11 +438,39 @@ background-color: rgb(12 163 127);
     </div>
     <div class="column9">
         <div class="buttons-container9">
+          
+                       <a href="https://www.example.com" class="icon-button43">
+    <div class="icon43"></div>
+  </a>
+          
+          
             <button class="button button-login9 science">Login</button>
            <p class="or">or</p>
-             <a href="https://www.example.com" class="icon-button42">
+<a href="#" id="openPopupLink" class="icon-button42">
     <div class="icon42"></div>
-  </a>
+</a>
+
+<div id="popup-container">
+    <h2>Titre du Popup</h2>
+    <p>Sous-titre du Popup</p>
+    <button id="close-btn" onclick="closePopup()">Fermer</button>
+</div>
+
+<script>
+    document.getElementById("openPopupLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Empêche le comportement par défaut du lien
+        openPopup();
+    });
+
+    function openPopup() {
+        document.getElementById("popup-container").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup-container").style.display = "none";
+    }
+</script>
+
         </div>
     </div>
 </div>
