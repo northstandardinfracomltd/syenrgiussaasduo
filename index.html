@@ -814,20 +814,18 @@ dropdownList.appendChild(customItem);
         <!-- Colonne de gauche -->
         <div class="newsgridcol vert">
           <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/4ca99e403abf84dfc50ee3ef3a6965af.png?v=1708961255473" alt="Image" class="imgx">
-            <h1 class="til1x">They trust us</h1>
-            <h2 class="til2x">Sous-titre</h2>
+           <h1 class="til1x1">AUTOMATION EASY</h1>   <h1 class="til1x">They trust us</h1>
         </div>
 
         <div class="newsgridcol rouge">
           <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/4ca99e403abf84dfc50ee3ef3a6965af.png?v=1708961255473" alt="Image"  class="imgx">
-            <h1 class="til1x">They trust us</h1>
-            <h2 class="til2x">Sous-titre</h2>
+             <h1 class="til1x1">AUTOMATION EASY</h1> <h1 class="til1x">They trust us</h1>
         </div>
           
-                  <div class="newsgridcol ">
+                  <div class="newsgridcol jaune">
           <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/4ca99e403abf84dfc50ee3ef3a6965af.png?v=1708961255473" alt="Image"  class="imgx">
-            <h1 class="til1x">They trust us</h1>
-            <h2 class="til2x">Sous-titre</h2>
+            <h1 class="til1x1">AUTOMATION EASY</h1>
+                        <h1 class="til1x">They trust us</h1>
         </div>
       </div>
     
@@ -835,6 +833,37 @@ dropdownList.appendChild(customItem);
     
     <style>
     
+      
+       .til1x1 {
+    font-size: 14px !important;
+    font-family: "saasduoTIL" !important;
+    letter-spacing: 0px;
+    color: #fff;
+    letter-spacing: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left !important;
+    cursor: default;
+}
+      
+             .til1x {
+    font-size: 24px !important;
+    font-family: "saasduoPAR" !important;
+    letter-spacing: 0px;
+    color: #fff;
+    letter-spacing: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left !important;
+    max-width: 1000px;
+    line-height: 40px;
+    cursor: default;
+}
+      
       
       .newsgrid {
     display: grid;
@@ -858,22 +887,29 @@ dropdownList.appendChild(customItem);
      .newsgridcol {
     display: block;
     gap: 10px;
-    padding: 15px;
-    border: 1.3px solid #28044a17;
+    padding: 11px;
     border-radius: 18px;
-    background: lightgrey;
+}
+      
+      
+      .newsgridcol:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 0px 4px #008eff38;
 }
       
            .vert {
     background: rgb(12 163 127) !important;
+                 border: 1.3px solid #28044a17 !important;
 }
       
                  .rouge {
     background: rgb(238 0 8) !important;
+                   border: 1.3px solid #28044a17 !important;
 }
       
                  .jaune {
     background: rgb(255 208 0) !important;
+                   border: 1.3px solid #28044a17 !important;
 }
       
         .carrelage-container {
