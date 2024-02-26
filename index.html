@@ -527,45 +527,60 @@ max-width: 1200px;
     
     <style>
     
-          
-                    /* Style général du conteneur grid */
-        .carrelage {
-            background-image: linear-gradient(to right, black 1px, transparent 1px),
-                              linear-gradient(to bottom, black 1px, transparent 1px);
-            background-size: 35px 35px; /* Taille des carrés */
+       .carrelage-container {
             position: relative;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f0f0f0; /* Couleur de fond derrière le carrelage */
         }
-      
-              .carre-noir {
-            background-color: black;
+
+        .carrelage {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: 45px 45px;
+            background-image: linear-gradient(to right, #ccc 1px, transparent 1px), linear-gradient(to bottom, #ccc 1px, transparent 1px);
         }
-    
+
+        .content99 {
+            position: relative;
+            z-index: 1; /* Pour que le contenu apparaisse au-dessus du carrelage */
+            padding: 20px;
+        }
+
+        .carre {
+            width: 45px;
+            height: 45px;
+            border: 1px solid #ccc;
+            position: absolute;
+        }
+
+        /* Styles pour les carrés remplis aléatoirement */
+        .carre.rempli {
+            background-color: #3498db; /* Couleur de remplissage */
+        }
     </style>
-    
+      <div class="carrelage-container">
             <div class="carrelage" id="carrelage">
-    
-<script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var carrelage = document.getElementById("carrelage");
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var carrelage = document.getElementById('carrelage');
+            var totalCarres = 10; // 10 carrés en largeur et hauteur
+            var pourcentageRemplissage = 30; // Pourcentage de carrés remplis
 
-            // Ajouter la classe "carre-noir" de manière aléatoire à certains carrés
-            for (var i = 0; i < 20; i++) { // Vous pouvez ajuster le nombre de carrés noirs
-                var randomRow = Math.floor(Math.random() * 20); // Nombre aléatoire de rangées
-                var randomCol = Math.floor(Math.random() * 20); // Nombre aléatoire de colonnes
-
-                var carre = document.createElement("div");
-                carre.className = "carre-noir";
-                carre.style.width = "35px";
-                carre.style.height = "35px";
-                carre.style.position = "absolute";
-                carre.style.top = randomRow * 35 + "px";
-                carre.style.left = randomCol * 35 + "px";
-
-                carrelage.appendChild(carre);
+            for (var i = 0; i < totalCarres; i++) {
+                for (var j = 0; j < totalCarres; j++) {
+                    var rempli = Math.random() * 100 <= pourcentageRemplissage;
+                    var carre = document.createElement('div');
+                    carre.className = 'carre ' + (rempli ? 'rempli' : '');
+                    carre.style.top = i * 45 + 'px';
+                    carre.style.left = j * 45 + 'px';
+                    carrelage.appendChild(carre);
+                }
             }
         });
     </script>
-
+               <div class="content99">
 
     
         <div class="container3">
@@ -599,7 +614,7 @@ max-width: 1200px;
             </div>
         </div>
     </div>
-    </div>
+    </div> </div> </div>
     <script>
         // Fonction pour basculer l'état de l'accordéon (ouvrir/fermer)
         function toggleAccordion(title) {
