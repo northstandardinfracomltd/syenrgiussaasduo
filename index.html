@@ -72,13 +72,30 @@ background: white;
       }
 
       .main-title {
-        font-size: 2em;
-        font-weight: bold;
+font-size: 64px !important;
+    font-family: "saasduoTIL" !important;
+    letter-spacing: -2.2px;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-right: auto;
+    text-align: center;
+    line-height: 65px;
+    padding-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: default;
+    color: #fff;
       }
 
       .sub-title {
-        font-size: 1.5em;
-        color: #555;
+margin-top: 10px;
+    text-align: center;
+    font-size: 24px !important;
+    font-family: "saasduoPAR" !important;
+    letter-spacing: 0px;
+    color: #fff;
+    line-height: 40px;
+    cursor: default;
       }
       
       
@@ -318,14 +335,27 @@ background-color: rgb(12 163 127);
         }
 
         .dropdown-inputS {
-            padding: 10px;
-            width: 200px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+font-family: "saasduoPAR" !important;
+    background: rgb(255 255 255) !important;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 24px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    width: 100% !important;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0px 4px 18px rgb(0 0 0/4%), 0px 2.025px 7.84688px rgba(0,0,0,.027), 0px 0.8px 2.925px rgb(0 0 0/2%), 0px 0.175px 1.04062px rgba(0,0,0,.013);
+}
 
         .dropdown-listS {
+          margin-top: 10px;
+              background: rgb(255 255 255) !important;
             position: absolute;
             top: 100%;
             left: 0;
@@ -334,9 +364,10 @@ background-color: rgb(12 163 127);
             overflow-y: auto;
             border: 1px solid #ccc;
             border-top: none;
-            border-radius: 0 0 5px 5px;
+            border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: none;
+          z-index: 30;
         }
 
         .dropdown-list-itemS {
@@ -437,6 +468,17 @@ background-color: rgb(12 163 127);
         }
       
       
+      .deskrib {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 24px !important;
+    font-family: "saasduoPAR" !important;
+    letter-spacing: 0px;
+    color: black;
+    line-height: 40px;
+    cursor: default;
+}
+      
       /* Ajoutez cette règle CSS au bloc style existant dans l'en-tête de votre document */
 .blur-background {
     position: fixed;
@@ -490,7 +532,7 @@ background-color: rgb(12 163 127);
         <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo29382398238Logo2938232938239232.svg?v=1708895915166" alt="Image" class="logo">
     </div>
     <div class="column9">
-        <p>Have a question? Call +44 7723 501018</p>
+   
     </div>
     <div class="column9">
         <div class="buttons-container9">
@@ -505,7 +547,7 @@ background-color: rgb(12 163 127);
 </div>
       
       <div class="container">
-        <h1 class="main-title">Grand Titre</h1>
+        <h1 class="main-title">What SaaS you'l need</h1>
         <h2 class="sub-title">Sous-Titre</h2>
         
         
@@ -635,25 +677,25 @@ dropdownList.appendChild(customItem);
         <!-- Première div interne -->
         <div class="item2">
             <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20What20We20Offer.svg?v=1708895911225" alt="Image 1">
-            <p>Description de la première image.</p>
+            <p class="deskrib">Description de la première image.</p>
         </div>
 
         <!-- Deuxième div interne -->
         <div class="item2">
             <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20Your20Fav20Tools.svg?v=1708895912975" alt="Image 2">
-            <p>Description de la deuxième image.</p>
+            <p class="deskrib">Description de la deuxième image.</p>
         </div>
 
         <!-- Troisième div interne -->
         <div class="item2">
             <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20Any20Browsers.svg?v=1708895902633" alt="Image 3">
-            <p>Description de la troisième image.</p>
+            <p class="deskrib">Description de la troisième image.</p>
         </div>
 
         <!-- Quatrième div interne -->
         <div class="item2">
             <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20Only20C2A302C0120Per20Log.svg?v=1708895910281" alt="Image 4">
-            <p>Description de la quatrième image.</p>
+            <p class="deskrib">Description de la quatrième image.</p>
         </div>
     </div>
        </div>
