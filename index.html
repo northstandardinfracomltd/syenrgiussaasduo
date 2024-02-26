@@ -227,8 +227,8 @@ max-width: 1200px;
         }
 
         .column9 {
-            border: 1px solid #ddd;
-            padding: 15px;
+            border: 0px solid transparent;
+            padding: 0px;
             text-align: center;
         }
       
@@ -495,8 +495,8 @@ background-color: rgb(12 163 127);
     <div class="dropdown-listS">
         <div class="dropdown-list-itemS" onclick="openPopup()">Un crabe rouge</div>
         <div class="dropdown-list-itemS" onclick="openPopup()">Un arbre vert</div>
-        <div class="dropdown-list-itemS" data-link="/contact">Un éléphant gris</div>
-        <div class="dropdown-list-itemS" data-link="/contact">Un flamant rose</div>
+        <div class="dropdown-list-itemS" onclick="openPopup()">Un éléphant gris</div>
+        <div class="dropdown-list-itemS" onclick="openPopup()">Un flamant rose</div>
     </div>
 </div>
 
@@ -518,11 +518,11 @@ background-color: rgb(12 163 127);
         });
 
         // Ajouter le dernier item personnalisé
-        const customItem = document.createElement('div');
-        customItem.className = 'dropdown-list-itemS';
-        customItem.innerText = inputValue;
-        customItem.dataset.link = '/contact';
-        dropdownList.appendChild(customItem);
+const customItem = document.createElement('div');
+customItem.className = 'dropdown-list-itemS';
+customItem.innerText = inputValue;
+customItem.onclick = openPopup;  // Utilisation de la fonction openPopup() lors du clic
+dropdownList.appendChild(customItem);
     });
 
     dropdownInput.addEventListener('focus', function () {
