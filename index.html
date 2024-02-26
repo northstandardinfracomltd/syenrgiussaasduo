@@ -129,7 +129,7 @@ margin-top: 10px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, auto);
-      gap: 20px;
+      gap: 25px;
       padding: 20px;
             max-width: 1200px;
             margin-left: auto;
@@ -187,7 +187,7 @@ line-height: 40px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            gap: 20px;
+            gap: 25px;
                       max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
@@ -677,25 +677,25 @@ dropdownList.appendChild(customItem);
         <!-- Première div interne -->
         <div class="item2">
             <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20What20We20Offer.svg?v=1708895911225" alt="Image 1">
-            <p class="deskrib">Description de la première image.</p>
+            <p class="deskrib">Your SaaS is browser-friendly</p>
         </div>
 
         <!-- Deuxième div interne -->
         <div class="item2">
             <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20Your20Fav20Tools.svg?v=1708895912975" alt="Image 2">
-            <p class="deskrib">Description de la deuxième image.</p>
+            <p class="deskrib">Your SaaS is browser-friendly</p>
         </div>
 
         <!-- Troisième div interne -->
         <div class="item2">
             <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20Any20Browsers.svg?v=1708895902633" alt="Image 3">
-            <p class="deskrib">Description de la troisième image.</p>
+            <p class="deskrib">Your SaaS is browser-friendly</p>
         </div>
 
         <!-- Quatrième div interne -->
         <div class="item2">
             <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20Only20C2A302C0120Per20Log.svg?v=1708895910281" alt="Image 4">
-            <p class="deskrib">Description de la quatrième image.</p>
+            <p class="deskrib">Your SaaS is browser-friendly</p>
         </div>
     </div>
        </div>
@@ -755,15 +755,18 @@ dropdownList.appendChild(customItem);
             margin-left: auto;
             margin-right: auto;
           z-index: 99999;
+          
+          
         }
 
         /* Style de la colonne de gauche */
         .left-column3 {
             /* Pour centrer verticalement le contenu */
-            display: flex;
+            display: block;
             flex-direction: column;
-            justify-content: center;
+            justify-content: left;
               z-index: 9999999;
+              text-align: left !important;
         }
 
         /* Style de la colonne de droite (accordéon) */
@@ -773,6 +776,8 @@ dropdownList.appendChild(customItem);
             flex-direction: column;
             justify-content: center;
               z-index: 9999999;
+          padding-top: 50px;
+          padding-bottom: 50px;
         }
 
         /* Style de l'accordéon */
@@ -813,6 +818,39 @@ dropdownList.appendChild(customItem);
       .imgsaas {
            max-width: 300px;
         }
+      
+      
+      .til1 {
+    font-size: 54px !important;
+    font-family: "saasduoTIL" !important;
+    letter-spacing: -1.8px !important;
+    color: #1b1b20;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left !important;
+    padding-top: 30px;
+    margin-bottom: 25px !important;
+    cursor: default;
+}
+      
+      
+      .til2 {
+    font-size: 24px !important;
+    font-family: "saasduoPAR" !important;
+    letter-spacing: 0px;
+    color: #1b1b20;
+    letter-spacing: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left !important;
+    max-width: 1000px;
+    line-height: 40px;
+    cursor: default;
+}
 
     </style>
     <div class="carrelage-container">
@@ -870,8 +908,8 @@ dropdownList.appendChild(customItem);
         <div class="container3">
         <!-- Colonne de gauche -->
         <div class="left-column3">
-            <h1>Gros Titre</h1>
-            <h2>Sous-titre</h2>
+            <h1 class="til1">Gros Titre</h1>
+            <h2 class="til2">Sous-titre</h2>
             <img src="chemin/vers/image.jpg" alt="Image">
         </div>
 
