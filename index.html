@@ -373,6 +373,27 @@ background-color: rgb(12 163 127);
     transition-duration: 0s;
 }
 
+      
+      
+              .button-login93 {
+background-color: rgb(12 163 127);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer !important;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "saasduoPAR" !important;
+    height: 30px !important;
+                   width: 30px !important;
+    letter-spacing: -0.3px;
+        }
+      
+      
         .button-register9 {
             background-color: #008CBA;
             color: #fff;
@@ -579,6 +600,38 @@ font-family: "saasduoPAR" !important;
                 <button id="close-btn" onclick="closePopup()">Cancel</button>
     <h2>Configure your Saas solution</h2>
     <p>Let’s get you started with SaaSduo. It only takes 3-5 minutes to complete your inquiry.</p>
+            
+            
+<form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyRzssaS16KZFd7wdXo-jNBCQDbk-md_4ExQatEcspks1OzkUaLxt8amZN3QXsoE6XG/exec">
+ 
+  <input class="gum lazyload" name="Emailx" type="email" placeholder="Email" required>
+    <input class="gum lazyload" name="Telx" type="text" placeholder="Téléphone" required>
+  <input class="gum lazyload" name="Entreprisex" type="text" placeholder="Entreprise" required>
+  
+<textarea class="gum gumtxtplus f2 lazyload" name="demandex" placeholder="Renseignements"></textarea><br>
+
+  <div class="lazyload">
+  <button type="submit">Envoyer</button>
+  </div>
+  <script type = "text/javascript" >
+    window.addEventListener("DOMContentLoaded", function() {
+        const yourForm = document.getElementById('FORM_ID');
+        yourForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(yourForm);
+            const action = e.target.action;
+            fetch(action, {
+                method: 'POST',
+                body: data,
+            }).then(() => {
+                window.location.replace('/support/confirmation')
+            })
+        })
+    }); 
+</script>
+</form>
+            
+            
 </div></div>
 
 <script>
@@ -609,7 +662,7 @@ font-family: "saasduoPAR" !important;
           
             <button class="button button-login9 science" >Login</button>
            <p class="or">or</p>
-            <button onclick="openPopup()" class="button button-login9 science" >+</button>
+            <button onclick="openPopup()" class="button button-login9 science" >Register</button>
         </div>
     </div>
 </div>
@@ -710,22 +763,6 @@ dropdownList.appendChild(customItem);
     <!-- Deuxième ligne -->
     <div class="grid-item">
       <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/2.svg?v=1708900196030" alt="Icône 6" class="icon">
-      <div class="text">Integration of pre-built and customized features</div>
-    </div>
-    <div class="grid-item">
-      <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/1.svg?v=1708900195173" alt="Icône 7" class="icon">
-      <div class="text">Integration of pre-built and customized features</div>
-    </div>
-    <div class="grid-item">
-      <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/3.svg?v=1708900196823" alt="Icône 8" class="icon">
-      <div class="text">Integration of pre-built and customized features</div>
-    </div>
-    <div class="grid-item">
-      <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/2.svg?v=1708900196030" alt="Icône 9" class="icon">
-      <div class="text">Integration of pre-built and customized features</div>
-    </div>
-    <div class="grid-item">
-      <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/1.svg?v=1708900195173" alt="Icône 10" class="icon">
       <div class="text">Integration of pre-built and customized features</div>
     </div>
   </div>
