@@ -227,7 +227,10 @@ display: grid;
 
 }
       
-      
+           
+      .lastlast {
+        z-index: 999999 !important;
+} 
       
       .foot1 {
     font-size: 32px !important;
@@ -239,6 +242,7 @@ display: grid;
     letter-spacing: -0.7px;
     color: #1b1b20;
     cursor: default !important;
+        z-index: 99999 !important;
 }
       
       .foot2 {
@@ -252,6 +256,7 @@ display: grid;
     color: #1b1b20;
     white-space: nowrap;
         padding-top: 20px !important;
+                z-index: 99999 !important;
 }
       
       
@@ -266,6 +271,7 @@ display: grid;
     margin-top: 20px;
     margin-bottom: 30px;
     cursor: default;
+                     z-index: 99999 !important;
 }
       
       .foot2:hover {
@@ -284,7 +290,14 @@ display: grid;
 }
 
 .columnX {
+  
   padding: 10px;
+      z-index: 9999;
+}
+      
+      .columnXb {
+ background: grey;
+      z-index: 9999;
 }
       
 
@@ -1026,32 +1039,11 @@ dropdownList.appendChild(customItem);
             </div>
         </div>
     </div>
-    </div> </div>
-    <script>
-        // Fonction pour basculer l'état de l'accordéon (ouvrir/fermer)
-        function toggleAccordion(title) {
-            const content = title.nextElementSibling;
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-            } else {
-                content.style.display = 'block';
-                // Fermer les autres items ouverts
-                const allContents = document.querySelectorAll('.accordion-item-content3');
-                allContents.forEach(item => {
-                    if (item !== content) {
-                        item.style.display = 'none';
-                    }
-                });
-            }
-        }
-    </script>
+    </div> 
     
-    
-    
-    
-        <div class="ineosX">
-    
+        
   <footer class="footer-containerX">
+    <div class="columnXb">
     <div class="columnX">
       <h2 class="foot1">Section 1</h2>
         <a class="foot2" href="#">Lien 1</a><br>
@@ -1078,9 +1070,11 @@ dropdownList.appendChild(customItem);
         <a class="foot2" href="#">Lien 1</a>
     </div>
   
+     </div>
   </footer>
-           <div class="lastlast">
-      <p class="foot3">
+      
+                 <div class="lastlast">
+                         <p class="foot3">
     
 <br>
 This site is protected by reCAPTCHA and the
@@ -1109,9 +1103,31 @@ consent at any time in your computer/device browser settings. Click
 the Privacy Policy to check how you can control the use of cookies
 through your device. Your data will be processed in accordance with
 our Privacy Policy. <br><br>Our letter about <a href="/modern-slavery-act" class="cristalinefooterlink" >Modern Slavery Act</a > from Ronan Roesch, SaaSduo Software Engineer
-</p>     </div> 
-          
-       </div> 
+</p>   
+  </div> 
+    
+    </div>
+    <script>
+        // Fonction pour basculer l'état de l'accordéon (ouvrir/fermer)
+        function toggleAccordion(title) {
+            const content = title.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+                // Fermer les autres items ouverts
+                const allContents = document.querySelectorAll('.accordion-item-content3');
+                allContents.forEach(item => {
+                    if (item !== content) {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        }
+    </script>
+    
+    
+    
     
     
     
