@@ -595,7 +595,7 @@ letter-spacing: -0.3px;
       margin-top: 15px;
               background: #1a282d;
               border: 1px solid #1a282d;
-              border-radius: 18px;
+              border-radius: 14px;
     text-align: left;
     font-size: 18px !important;
     font-family: "saasduoPAR" !important;
@@ -612,6 +612,19 @@ letter-spacing: -0.3px;
               margin-left: auto;
               margin-right: auto;
       }
+      
+      
+      
+      
+                  .gum:hover {
+    box-shadow: 0 0 0px 4px #008eff38;
+      }
+      
+      
+                        .gumbtn:hover {
+    box-shadow: 0 0 0px 4px #008eff38;
+      }
+      
       
       
             .gum::placeholder {
@@ -644,21 +657,22 @@ letter-spacing: -0.3px;
       
       
                   .gumbtn {
-margin-top: 25px;
+margin-top: 13px;
 background: #0045ac;
 border: 1px solid #0045ac;
-border-radius: 23px;
+border-radius: 14px;
 text-align: center;
 font-size: 18px !important;
 font-family: "saasduoPAR" !important;
 letter-spacing: 0px;
 color: #fff;
 cursor: pointer;
+                    height: 55px;
+                                   max-width: 432px;
              width: 90%;
-               max-width: 400px;
               padding-left: 15px;
               padding-right: 15px;
-                            padding-top: 9px;
+                            padding-top: 11px;
               padding-bottom: 9px;
 margin-right: auto;
                     margin-bottom: 30px;
@@ -719,6 +733,15 @@ padding: 15px;
     z-index: 2; /* Assure que le popup est au-dessus de l'arrière-plan flou */
 }
       
+            
+                  .gumtxtplus {
+height: 100px !important;
+      }
+
+
+
+
+      
       
     </style>
     <title>Centered Container</title>
@@ -733,7 +756,7 @@ padding: 15px;
           <div id="internalpop">
             
                 <button id="close-btn" onclick="closePopup()">Cancel</button>
-    <p class="popupTXT">Let’s get you started with SaaSduo. It only takes 3-5 minutes to complete your inquiry.</p>
+    <p class="popupTXT">It only takes 3-5 minutes to complete your inquiry with SaaSduo</p>
             
      <div id="formX">        
 <form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyRzssaS16KZFd7wdXo-jNBCQDbk-md_4ExQatEcspks1OzkUaLxt8amZN3QXsoE6XG/exec">
@@ -744,9 +767,9 @@ padding: 15px;
   
 <textarea class="gum gumtxtplus f2" name="demandex" placeholder="Renseignements"></textarea><br>
 
-  <div class="lazyload">
+
   <button type="submit" class="gumbtn">Envoyer</button>
-  </div>
+
   <script type = "text/javascript" >
     window.addEventListener("DOMContentLoaded", function() {
         const yourForm = document.getElementById('FORM_ID');
