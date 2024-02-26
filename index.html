@@ -809,9 +809,73 @@ dropdownList.appendChild(customItem);
     
     
     
+        
+        <div class="newsgrid">
+        <!-- Colonne de gauche -->
+        <div class="newsgridcol vert">
+          <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/4ca99e403abf84dfc50ee3ef3a6965af.png?v=1708961255473" alt="Image" class="imgx">
+            <h1 class="til1x">They trust us</h1>
+            <h2 class="til2x">Sous-titre</h2>
+        </div>
+
+        <div class="newsgridcol rouge">
+          <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/4ca99e403abf84dfc50ee3ef3a6965af.png?v=1708961255473" alt="Image"  class="imgx">
+            <h1 class="til1x">They trust us</h1>
+            <h2 class="til2x">Sous-titre</h2>
+        </div>
+          
+                  <div class="newsgridcol ">
+          <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/4ca99e403abf84dfc50ee3ef3a6965af.png?v=1708961255473" alt="Image"  class="imgx">
+            <h1 class="til1x">They trust us</h1>
+            <h2 class="til2x">Sous-titre</h2>
+        </div>
+      </div>
+    
+    
     
     <style>
     
+      
+      .newsgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+        width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+      
+            .imgx {
+    width: 100%;
+}
+     
+      
+      
+     .newsgridcol {
+    display: block;
+    gap: 10px;
+    padding: 15px;
+    border: 1.3px solid #28044a17;
+    border-radius: 18px;
+    background: lightgrey;
+}
+      
+           .vert {
+    background: rgb(12 163 127) !important;
+}
+      
+                 .rouge {
+    background: rgb(238 0 8) !important;
+}
+      
+                 .jaune {
+    background: rgb(255 208 0) !important;
+}
+      
         .carrelage-container {
             position: relative;
             width: 100%;
