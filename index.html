@@ -543,6 +543,7 @@ font-family: "saasduoPAR" !important;
                 border: 1px solid #252c2e;
                 margin-top: 30px;
                 margin-bottom: 30px;
+                display: block;
         }
       
       
@@ -579,54 +580,102 @@ letter-spacing: -0.3px;
 }
       
       
-
+          input:focus,
+      textarea:focus,
+      button:focus {
+        outline: none;
+      }
+      
+            
+            textarea {
+    resize: none;
+}
             
             .gum {
       margin-top: 15px;
               background: #1a282d;
               border: 1px solid #1a282d;
-              border-radius: 23px;
+              border-radius: 18px;
     text-align: left;
     font-size: 18px !important;
     font-family: "saasduoPAR" !important;
     letter-spacing: 0px;
     color: #fff;
     line-height: 40px;
-    cursor: default;
-             width: 93%;
-               max-width: 600px;
-              padding-left: 12px;
-              padding-right: 12px;
-                            padding-top: 2px;
-              padding-bottom: 2px;
+    cursor: text;
+             width: 90%;
+               max-width: 400px;
+              padding-left: 15px;
+              padding-right: 15px;
+                            padding-top: 9px;
+              padding-bottom: 9px;
               margin-left: auto;
               margin-right: auto;
       }
       
+      
+            .gum::placeholder {
+        color: #fff;
+        font-family: "saasduoPAR" !important;
+        font-weight: 100;
+        letter-spacing: 0px;
+    line-height: 40px;
+        font-size: 18px;
+      }
+
+      
+      
+                  @font-face {
+        font-family: proxima nova;
+        src: url(https://d1ayxb9ooonjts.cloudfront.net/fc3fa84bad39c1906ab5f12edfeeda77.otf);
+      }
+      @font-face {
+        font-family: proxima nova semibold;
+        src: url(https://d1ayxb9ooonjts.cloudfront.net/847b2e2eaaeffe475d49ab8586ed0938.otf);
+      }
+      @font-face {
+        font-family: ouiprev;
+        src: url(https://d1ayxb9ooonjts.cloudfront.net/ff059c404b36c9ba4b07629da5c63673.otf);
+      }
+      @font-face {
+        font-family: proxima nova extrabold;
+        src: url(https://d1ayxb9ooonjts.cloudfront.net/80cc6392abe5652b5227ecff51ad2526.otf);
+      }
       
       
                   .gumbtn {
-      margin-top: 15px;
-              background: #0045ac;
-              border: 1px solid #0045ac;
-              border-radius: 23px;
-    text-align: left;
-    font-size: 18px !important;
-    font-family: "saasduoPAR" !important;
-    letter-spacing: 0px;
-    color: #fff;
-    line-height: 40px;
-    cursor: default;
-             width: 93%;
-               max-width: 600px;
-              padding-left: 12px;
-              padding-right: 12px;
-                            padding-top: 2px;
-              padding-bottom: 2px;
-              margin-left: auto;
-              margin-right: auto;
+margin-top: 25px;
+background: #0045ac;
+border: 1px solid #0045ac;
+border-radius: 23px;
+text-align: center;
+font-size: 18px !important;
+font-family: "saasduoPAR" !important;
+letter-spacing: 0px;
+color: #fff;
+cursor: pointer;
+             width: 90%;
+               max-width: 400px;
+              padding-left: 15px;
+              padding-right: 15px;
+                            padding-top: 9px;
+              padding-bottom: 9px;
+margin-right: auto;
+                    margin-bottom: 30px;
       }
       
+      
+      
+      
+                        .gumbtn:hover {
+background: #1870F4;
+                          border: 1px solid #1870F4;
+
+      }
+      
+      
+      
+    
       
                   .formX {
 padding: 15px;
