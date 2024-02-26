@@ -255,8 +255,9 @@ display: grid;
     text-decoration: none;
     color: #1b1b20;
     white-space: nowrap;
-        padding-top: 20px !important;
                 z-index: 99999 !important;
+        line-height: 42px;
+        cursor: pointer !important;
 }
       
       
@@ -287,21 +288,9 @@ display: grid;
                                   max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+  margin-top: 10px;
 }
 
-.columnX {
-  
-  padding: 10px;
-      z-index: 9999;
-}
-      
-      .columnXb {
- background: grey;
-      z-index: 9999;
-}
-      
-
-      
       
       
       
@@ -498,9 +487,7 @@ font-family: "saasduoPAR" !important;
         .dot-background {
             margin: 0;
             padding: 0;
-            background-image: url('https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/dotstempo.svg?v=1708944431421'); /* Remplacez par le chemin de votre image */
-            background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le viewport */
-            background-repeat: no-repeat; /* Empêche la répétition de l'image */
+            background-color: white;
         }
       
       
@@ -1042,38 +1029,54 @@ dropdownList.appendChild(customItem);
     </div> 
     
         
-  <footer class="footer-containerX">
-    <div class="columnXb">
-    <div class="columnX">
-      <h2 class="foot1">Section 1</h2>
-        <a class="foot2" href="#">Lien 1</a><br>
-        <a class="foot2" href="#">Lien 1</a><br>
-        <a class="foot2" href="#">Lien 1</a>
-    </div>
-    <div class="columnX">
-      <h2 class="foot1">Section 2</h2>
+      <style>
+      
+      
+.columnX {
+  padding: 10px;
+      z-index: 9999;
+}
+      
 
-        <a class="foot2" href="#">Lien 1</a><br>
-        <a class="foot2" href="#">Lien 1</a><br>
-        <a class="foot2" href="#">Lien 1</a>
+      
+      
+      </style>
+      
+      
+  <footer class="footer-containerX">
+    <div class="columnX">
+      <h2 class="foot1">Company</h2>
+        <a class="foot2" href="#">Impressum</a><br>
+        <a class="foot2" href="#">Career</a><br>
+        <a class="foot2" href="#">Feedback</a>
     </div>
     <div class="columnX">
-      <h2 class="foot1">Section 3</h2>
-        <a class="foot2" href="#">Lien 1</a><br>
-        <a class="foot2" href="#">Lien 1</a><br>
-        <a class="foot2" href="#">Lien 1</a>
+      <h2 class="foot1">Resources</h2>
+
+        <a class="foot2" href="#">Français</a><br>
+        <a class="foot2" href="#">Terms</a><br>
+        <a class="foot2" href="#">Privacy</a>
     </div>
     <div class="columnX">
-      <h2 class="foot1">Section 4</h2>
-        <a class="foot2" href="#">Lien 1</a><br>
-        <a class="foot2" href="#">Lien 1</a><br>
-        <a class="foot2" href="#">Lien 1</a>
+      <h2 class="foot1">Lorem</h2>
+        <a class="foot2" href="#">Login</a><br>
+        <a class="foot2" href="#">Support</a><br>
+        <a class="foot2" href="#">Status</a>
+    </div>
+    <div class="columnX">
+      <h2 class="foot1">Contact</h2>
+        <a class="foot2" href="#">mail@saasduo.com</a><br>
+        <a class="foot2" href="#">+44 7723 501018</a><br>
+        <a class="foot2" href="#">WhatsApp</a>
     </div>
   
-     </div>
   </footer>
       
-                 <div class="lastlast">
+      
+      
+      
+        <div class="footer-containerX2">
+    <div class="columnX2">
                          <p class="foot3">
     
 <br>
@@ -1103,8 +1106,11 @@ consent at any time in your computer/device browser settings. Click
 the Privacy Policy to check how you can control the use of cookies
 through your device. Your data will be processed in accordance with
 our Privacy Policy. <br><br>Our letter about <a href="/modern-slavery-act" class="cristalinefooterlink" >Modern Slavery Act</a > from Ronan Roesch, SaaSduo Software Engineer
-</p>   
-  </div> 
+</p>
+    </div>
+  
+  </div>
+
     
     </div>
     <script>
@@ -1155,6 +1161,24 @@ our Privacy Policy. <br><br>Our letter about <a href="/modern-slavery-act" clas
     </div>
     
     <style>
+      
+            
+.footer-containerX2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  color: #fff;
+  padding: 20px;
+                                  max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+  margin-top: 0px;
+}
+      
+      .columnX2 {
+  padding: 10px;
+      z-index: 9999;
+}
+
     
       .sticky-cta-bar {
         background-color: #191b1f;
