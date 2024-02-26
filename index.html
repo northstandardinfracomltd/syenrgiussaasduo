@@ -519,41 +519,53 @@ font-family: "saasduoPAR" !important;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #000000b5;
-                    backdrop-filter: blur(5px);
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             text-align: center;
                 z-index: 9999999999999999;
                 width: 100%;
     height: 100vh;
+                
+                  background: #a0a0a015 !important; /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(5px) !important; /* Add this line first, it fixes blur for Safari*/
+  backdrop-filter: blur(5px) !important;  /* This line activates blur*/
         }
 
-      
+    
             
               #internalpop {
-            background-color: white;
+            background-color: #0b1416;
             text-align: center;
                 max-width: 90%;
                 width: 500px;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 12px;
+                border: 1px solid #252c2e;
                 margin-top: 30px;
                 margin-bottom: 30px;
         }
       
       
         #close-btn {
-            background-color: #333;
-            color: #fff;
             padding: 8px 12px;
-            border: none;
             cursor: pointer;
-            font-size: 14px;
-            margin-top: 10px;
            z-index: 99999999999999999;
-        }
+          border: 1px solid #0b1416;
+          background-color: #0b1416;
+color: #629FFF;
+border-radius: 12px;
+font-size: 18px;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+font-family: "saasduoPAR" !important;
+height: 42px;
+letter-spacing: -0.3px;
+}
+    
       
       
       .deskrib {
@@ -566,6 +578,21 @@ font-family: "saasduoPAR" !important;
     line-height: 40px;
     cursor: default;
 }
+      
+      
+
+            
+            .popupTXT {
+      margin-top: 10px;
+    text-align: center;
+    font-size: 24px !important;
+    font-family: "saasduoPAR" !important;
+    letter-spacing: 0px;
+    color: #fff;
+    line-height: 40px;
+    cursor: default;
+      }
+      
       
       /* Ajoutez cette règle CSS au bloc style existant dans l'en-tête de votre document */
 .blur-background {
@@ -599,8 +626,7 @@ font-family: "saasduoPAR" !important;
           <div id="internalpop">
             
                 <button id="close-btn" onclick="closePopup()">Cancel</button>
-    <h2>Configure your Saas solution</h2>
-    <p>Let’s get you started with SaaSduo. It only takes 3-5 minutes to complete your inquiry.</p>
+    <p class="popupTXT">Let’s get you started with SaaSduo. It only takes 3-5 minutes to complete your inquiry.</p>
             
             
 <form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyRzssaS16KZFd7wdXo-jNBCQDbk-md_4ExQatEcspks1OzkUaLxt8amZN3QXsoE6XG/exec">
