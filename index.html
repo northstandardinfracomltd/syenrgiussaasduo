@@ -391,7 +391,51 @@ background-color: rgb(12 163 127);
             background-repeat: no-repeat; /* Empêche la répétition de l'image */
         }
       
+      
+      
+              #popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+                z-index: 9999999999999999;
+        }
 
+        #close-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+           z-index: 99999999999999999;
+        }
+      
+      
+      /* Ajoutez cette règle CSS au bloc style existant dans l'en-tête de votre document */
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 0.5 pour une opacité de 50% (ajustez selon vos préférences) */
+    z-index: 1; /* Assure que l'arrière-plan flou est au-dessus de tout le reste, sauf le popup */
+    display: none;
+}
+
+/* Ajoutez cette règle pour ajuster le positionnement du popup lorsqu'il est ouvert */
+#popup-container.open {
+    display: block;
+    z-index: 2; /* Assure que le popup est au-dessus de l'arrière-plan flou */
+}
+      
       
     </style>
     <title>Centered Container</title>
@@ -402,7 +446,22 @@ background-color: rgb(12 163 127);
   
   <body>
     
+    <div id="popup-container">
+    <h2>Titre du Popup</h2>
+    <p>Sous-titre du Popup</p>
+    <button id="close-btn" onclick="closePopup()">Fermer</button>
+</div>
 
+<script>
+    function openPopup() {
+        document.getElementById("popup-container").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup-container").style.display = "none";
+    }
+</script>
+    
 
     
     <div class="purple">
@@ -416,79 +475,12 @@ background-color: rgb(12 163 127);
     </div>
     <div class="column9">
         <div class="buttons-container9">
-          
-                       <a href="https://www.example.com" class="icon-button43">
-    <div class="icon43"></div>
-  </a>
+
           
           
-            <button class="button button-login9 science">Login</button>
+            <button class="button button-login9 science" >Login</button>
            <p class="or">or</p>
-
-          
-        
-    <style>
-
-        #popup-container {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        #close-btn {
-            cursor: pointer;
-            font-size: 18px;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-        }
-
-        #icon-btn {
-            cursor: pointer;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            background-image: url('https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/plus.svg?v=1708946385768');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-        }
-    </style>
-
-    <!-- Icon Button -->
-    <button id="icon-btn" onclick="openPopup()"></button>
-
-    <!-- Popup Container -->
-    <div id="popup-container">
-        <h2>Titre du Popup</h2>
-        <p>Sous-titre du Popup</p>
-        <button id="close-btn" onclick="closePopup()">Fermer</button>
-    </div>
-
-    <script>
-        function openPopup() {
-            document.getElementById("popup-container").style.display = "block";
-        }
-
-        function closePopup() {
-            document.getElementById("popup-container").style.display = "none";
-        }
-    </script>
-
-
-
+            <button onclick="openPopup()" class="button button-login9 science" >+</button>
         </div>
     </div>
 </div>
@@ -501,8 +493,8 @@ background-color: rgb(12 163 127);
         <div class="dropdownS">
     <input type="text" class="dropdown-inputS" placeholder="Saisir ici">
     <div class="dropdown-listS">
-        <div class="dropdown-list-itemS" data-link="/contact">Un crabe rouge</div>
-        <div class="dropdown-list-itemS" data-link="/contact">Un arbre vert</div>
+        <div class="dropdown-list-itemS" onclick="openPopup()">Un crabe rouge</div>
+        <div class="dropdown-list-itemS" onclick="openPopup()">Un arbre vert</div>
         <div class="dropdown-list-itemS" data-link="/contact">Un éléphant gris</div>
         <div class="dropdown-list-itemS" data-link="/contact">Un flamant rose</div>
     </div>
