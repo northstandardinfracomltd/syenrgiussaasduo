@@ -470,15 +470,15 @@ max-width: 1200px;
             position: relative;
             width: 100%;
             overflow: hidden;
-            background-color: #f0f0f0; /* Couleur de fond derrière le carrelage */
+            background-color: #fff; /* Couleur de fond derrière le carrelage */
         }
 
         .carrelage {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-size: 50px 50px;
-            background-image: linear-gradient(to right, #ccc 1px, transparent 1px), linear-gradient(to bottom, #ccc 1px, transparent 1px);
+            background-size: 57px 57px;
+            background-image: linear-gradient(to right, #d6ddff 1px, transparent 1px), linear-gradient(to bottom, #d6ddff 1px, transparent 1px);
             pointer-events: none; /* Pour permettre aux événements de souris de passer à travers le carrelage */
         }
 
@@ -489,15 +489,18 @@ max-width: 1200px;
         }
 
         .carre {
-            width: 50px;
-            height: 50px;
-            border: 1px solid #ccc;
+            width: 56px;
+            height: 56px;
+            border: 0px solid transparent;
             position: absolute;
         }
+      
 
         /* Styles pour les carrés remplis aléatoirement */
         .carre.rempli {
-            background-color: #3498db; /* Couleur de remplissage */
+            background-color: #efeffe; /* Couleur de remplissage */
+          margin-left: 1px;
+           margin-top: 1px;
         }
       
       
@@ -597,8 +600,8 @@ max-width: 1200px;
 
                 var carre = document.createElement('div');
                 carre.className = 'carre rempli';
-                carre.style.top = row * 50 + 'px';
-                carre.style.left = col * 50 + 'px';
+                carre.style.top = row * 57 + 'px';
+                carre.style.left = col * 57 + 'px';
                 carrelage.appendChild(carre);
             }
           
@@ -634,19 +637,20 @@ max-width: 1200px;
                 <!-- Item 1 -->
                 <div class="accordion-item3">
                     <div class="accordion-item-title3" onclick="toggleAccordion(this)">Question 1</div>
-                    <div class="accordion-item-content3">Réponse à la question 1.</div>
+                    <div class="accordion-item-content3">Réponse à la question 1. <br><img src="chemin/vers/image.jpg" alt="Image" class="imgsaas"></div>
+                  
                 </div>
 
                 <!-- Item 2 -->
                 <div class="accordion-item3">
                     <div class="accordion-item-title3" onclick="toggleAccordion(this)">Question 2</div>
-                    <div class="accordion-item-content3">Réponse à la question 2.</div>
+                    <div class="accordion-item-content3">Réponse à la question 2. <br><img src="chemin/vers/image.jpg" alt="Image" class="imgsaas"></div>
                 </div>
 
                 <!-- Item 3 -->
                 <div class="accordion-item3">
                     <div class="accordion-item-title3" onclick="toggleAccordion(this)">Question 3</div>
-                    <div class="accordion-item-content3">Réponse à la question 3.</div>
+                    <div class="accordion-item-content3">Réponse à la question 3.<br> <img src="chemin/vers/image.jpg" alt="Image" class="imgsaas"></div>
                 </div>
             </div>
         </div>
@@ -715,5 +719,102 @@ max-width: 1200px;
           
        </div> 
     
+    
+    
+        <div class="sticky-cta-bar" id="maDiv">
+      <div class="cta-text">
+        <div class="titreinfoable lazyload">Cookies</div>
+        <div class="sous-titreinfoable lazyload">
+          
+ 
+          Nous utilisons des cookies et des technologies similaires pour mémoriser vos préférences, comprendre votre parcours et mesurer l'efficacité des fonctions. À l’aide de tiers (<a target="_blank" href="https://support.google.com/analytics/answer/12159447?hl=fr" class="linkcookies">Google Analytics</a> et <a target="_blank" href="https://saasduo.com/" class="linkcookies">SaaSduo</a>) nous stockons des données dépersonnalisées pour récupérer des statistiques et ainsi améliorer les performances de notre site. Si vous utilisez risqueo.com, vous acceptez l’utilisation de tous les cookies et notre politique de confidentialité, ainsi nous vous invitons aussi à la lecture de notre <a target="_blank" href="/confidentialite" class="linkcookies">politique de confidentialité.</a>
+        </div>
+      </div>
+      <button class="fermerinfoable lazyload science" onclick="masquerDiv()">
+        Fermer
+      </button>
+      
+  <script>
+    function masquerDiv() {
+      var div = document.getElementById("maDiv");
+      div.style.display = "none";
+    };
+  </script>
+      
+      
+    </div>
+    
+    <style>
+    
+      .sticky-cta-bar {
+        background-color: #191b1f;
+        padding: 15px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 19999999;
+      }
+
+      .cta-text {
+        flex: 1;
+        margin-right: 10px;
+      }
+
+      .cta-button {
+        background-color: #ff6600;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+     
+      }
+
+      @media (max-width: 768px) {
+        .sticky-cta-bar {
+          flex-direction: column;
+          text-align: left !important;
+          padding: 10px;
+             padding-bottom: 30px !important;
+          
+        }
+        
+        
+        .fermerinfoable {
+    margin-left: 8.5px;
+    margin-right: auto;
+}
+        
+        .cta-text {
+          margin-bottom: 3px;
+      
+        }
+      }
+      
+     .linkcookies {
+         color: #4ebccb !important;
+                text-decoration: none;
+
+        }
+      
+        .linkcookies:hover {
+         text-decoration: underline;
+        }
+    
+    </style>
+    
   </body>
+  
+  
+    <script>
+if (location.protocol != "https:") {
+location.href =
+"https:" +
+window.location.href.substring(window.location.protocol.length);
+}
+</script>
+  
 </html>
