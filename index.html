@@ -110,27 +110,36 @@ background: white;
 }
           .grid-container {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, auto);
       gap: 20px;
       padding: 20px;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: -90px;
     }
 
     .grid-item {
-    text-align: left;
+    text-align: center;
     border: 1px solid #3a155a;
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 20px;
-    background-color: #28044a9e;
+    background-color: #2c094e;
     z-index: 10;
+    }
+      
+      
+          .grid-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 0px 4px #008eff38;
     }
 
     .icon {
       width: 50px; /* Ajustez la taille de l'icône selon vos besoins */
       height: 50px;
+      margin-top: 12px;
+      margin-bottom: 6px;
     }
 
     .text {
@@ -161,12 +170,12 @@ line-height: 40px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            gap: 25px;
+            gap: 20px;
                       max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
-          padding-top: 50px;
-                    padding-bottom: 50px;
+          padding-top: 100px;
+                    padding-bottom: 100px;
         }
 
         /* Style des divs internes */
@@ -560,6 +569,14 @@ dropdownList.appendChild(customItem);
       
         <div class="grid-container">
     <!-- Première ligne -->
+              <div class="grid-item">
+      <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/1.svg?v=1708900195173" alt="Icône 1" class="icon">
+      <div class="text">Integration of pre-built and customized features</div>
+    </div>
+              <div class="grid-item">
+      <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/1.svg?v=1708900195173" alt="Icône 1" class="icon">
+      <div class="text">Integration of pre-built and customized features</div>
+    </div>
     <div class="grid-item">
       <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/1.svg?v=1708900195173" alt="Icône 1" class="icon">
       <div class="text">Integration of pre-built and customized features</div>
