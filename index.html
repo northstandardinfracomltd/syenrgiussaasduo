@@ -12,6 +12,36 @@ color: #1b1b20;
 }
 
       
+      
+            
+      .science {
+        position: relative;
+    overflow: hidden;}
+            
+      .science:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        90deg,
+        rgba(255,255,255, 0) 10%,
+        rgba(255,255,255, .1),
+        rgba(255,255,255, 0) 100%
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear; /* Animation */
+}
+      
+      @keyframes shine {
+    0% {left: -100px}
+    20% {left: 100%}
+    100% {left: 100%}
+}
+      
+      
+      
       body {
 background: white;
         margin: 0px !important;
@@ -275,7 +305,7 @@ max-width: 1200px;
         .dot-background {
             margin: 0;
             padding: 0;
-            background-image: url('https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/Dots.svg?v=1708939901840'); /* Remplacez par le chemin de votre image */
+            background-image: url('https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/dotstempo.svg?v=1708944431421'); /* Remplacez par le chemin de votre image */
             background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le viewport */
             background-repeat: no-repeat; /* Empêche la répétition de l'image */
         }
@@ -288,10 +318,11 @@ max-width: 1200px;
   
   
   <body>
+
     
-    
-    <div class="navtank">
-<div class="container9">
+    <div class="purple">
+      
+      <div class="container9">
     <div class="column9 column9spe">
         <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/saasduo.com%20SaaSduo%200000-2.svg?v=1708901804347" alt="Image" class="logo">
     </div>
@@ -308,11 +339,6 @@ max-width: 1200px;
         </div>
     </div>
 </div>
-    </div>
-    
-    <div class="purple">
-      
-      
       
       <div class="container">
         <h1 class="main-title">Grand Titre</h1>
@@ -803,6 +829,8 @@ max-width: 1200px;
         .linkcookies:hover {
          text-decoration: underline;
         }
+      
+      
     
     </style>
     
