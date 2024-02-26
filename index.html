@@ -91,7 +91,7 @@ background: white;
                   
               /* Style général du conteneur grid */
         .parkles {
-          background: transparent;
+       background: linear-gradient(180deg, #ffffffd6 10%, #ffffff00 90%);
         }
       
       
@@ -131,7 +131,14 @@ background: white;
       
                     /* Style général du conteneur grid */
         .carrelage {
-          background: lightgrey;
+            background-image: linear-gradient(to right, black 1px, transparent 1px),
+                              linear-gradient(to bottom, black 1px, transparent 1px);
+            background-size: 15px 15px; /* Taille des carrés */
+            position: relative;
+        }
+      
+              .carre-noir {
+            background-color: black;
         }
       
       
@@ -491,6 +498,11 @@ max-width: 1200px;
       
       
     </div>
+    
+    
+    
+    
+    
         <div class="dot-background">
     
      <div class="parkles">
@@ -524,8 +536,41 @@ max-width: 1200px;
     </div>
     
     
-            <div class="carrelage">
+            <div class="carrelage" id="carrelage">
     
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var carrelage = document.getElementById("carrelage");
+            var largeurCarrelage = 300; // Largeur totale du carrelage
+
+            function genererCarrerNoir() {
+                // Supprimer les carrés noirs existants
+                var anciensCarresNoirs = document.querySelectorAll(".carre-noir");
+                anciensCarresNoirs.forEach(function(ancienCarre) {
+                    carrelage.removeChild(ancienCarre);
+                });
+
+                // Ajouter la classe "carre-noir" de manière aléatoire à certains carrés
+                for (var i = 0; i < 4; i++) { // Vous pouvez ajuster le nombre de carrés noirs à la fois
+                    var randomCol = Math.floor(Math.random() * (largeurCarrelage / 15)); // Nombre aléatoire de colonnes
+
+                    var carre = document.createElement("div");
+                    carre.className = "carre-noir";
+                    carre.style.width = "15px";
+                    carre.style.height = "15px";
+                    carre.style.position = "absolute";
+                    carre.style.top = Math.floor(Math.random() * (300 / 15)) * 15 + "px"; // Position aléatoire en hauteur
+                    carre.style.left = randomCol * 15 + "px";
+
+                    carrelage.appendChild(carre);
+                }
+            }
+
+            // Appeler la fonction toutes les 2 secondes
+            setInterval(genererCarrerNoir, 2000);
+        });
+    </script>
+
     
         <div class="container3">
         <!-- Colonne de gauche -->
