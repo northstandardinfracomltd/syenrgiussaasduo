@@ -108,7 +108,7 @@ margin-top: 10px;
       
       
       .purple {
-  background: linear-gradient(90deg, #320e53 10%, #28044a 90%);
+  background: linear-gradient(135deg, #3e1961 30%, #28044a 70%);
         padding-top: 20px;
         padding-bottom: 20px;
       }
@@ -750,7 +750,6 @@ height: 100px !important;
 
 
 
-
       
       
     </style>
@@ -846,7 +845,37 @@ height: 100px !important;
         
         
         <div class="dropdownS">
-    <input type="text" class="dropdown-inputS" placeholder="Saisir ici">
+<input type="text" class="dropdown-inputS" placeholder="Saisir ici">
+
+<script>
+  var placeholders = ["Mon jambon", "Mon crabe", "Mon journal"];
+  var currentPlaceholderIndex = 0;
+  var inputElement = document.querySelector(".dropdown-inputS");
+
+  function typePlaceholder() {
+    var currentPlaceholder = placeholders[currentPlaceholderIndex];
+    var placeholderText = "";
+    var placeholderInterval = setInterval(function() {
+      placeholderText += currentPlaceholder[placeholderText.length];
+      inputElement.setAttribute("placeholder", placeholderText);
+
+      if (placeholderText === currentPlaceholder) {
+        clearInterval(placeholderInterval);
+        setTimeout(nextPlaceholder, 1000);
+      }
+    }, 100);
+  }
+
+  function nextPlaceholder() {
+    currentPlaceholderIndex = (currentPlaceholderIndex + 1) % placeholders.length;
+    typePlaceholder();
+  }
+
+  typePlaceholder();
+</script>
+
+          
+          
     <div class="dropdown-listS">
         <div class="dropdown-list-itemS" onclick="openPopup()">Un crabe rouge</div>
         <div class="dropdown-list-itemS" onclick="openPopup()">Un arbre vert</div>
