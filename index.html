@@ -300,8 +300,9 @@ display: grid;
       
       .navtank {
   position: sticky;
-  top: 0; /* Spécifiez la distance à partir du haut de la fenêtre où la div deviendra collante */
+  top: 0; 
         background: white;
+        z-index: 19999999;
 }
       
       
@@ -837,14 +838,9 @@ height: 100px !important;
     
     
 
+              <div class="navtank">
           
-          
-          
-
-    
-    <div class="purple">
-      
-      <div class="container9">
+              <div class="container9">
     <div class="column9 column9spe">
         <img src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo29382398238Logo2938232938239232.svg?v=1708895915166" alt="Image" class="logo">
     </div>
@@ -861,7 +857,12 @@ height: 100px !important;
             <button onclick="openPopup()" class="button button-login9 science" >Register</button>
         </div>
     </div>
-</div>
+</div>  
+    </div>  
+
+    
+    <div class="purple">
+      
       
       <div class="container">
         <h1 class="main-title">What SaaS you'l need</h1>
@@ -1518,7 +1519,7 @@ padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1999;
+    z-index: 19999999;
       }
 
       .cta-text {
