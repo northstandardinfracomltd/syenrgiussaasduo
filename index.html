@@ -642,7 +642,7 @@ letter-spacing: -0.3px;
               border: 1px solid #1a282d;
               border-radius: 14px;
     text-align: left;
-    font-size: 18px !important;
+    font-size: 20px !important;
     font-family: "saasduoPAR" !important;
     letter-spacing: 0px;
     color: #fff;
@@ -678,7 +678,7 @@ letter-spacing: -0.3px;
         font-weight: 100;
         letter-spacing: 0px;
     line-height: 40px;
-        font-size: 18px;
+        font-size: 20px;
       }
 
       
@@ -702,7 +702,7 @@ letter-spacing: -0.3px;
       
       
                   .gumbtn {
-background-color: rgb(12 163 127);
+background-color: #d93b01;
     color: #fff;
     padding: 8px 15px;
     border: none;
@@ -713,20 +713,21 @@ background-color: rgb(12 163 127);
     font-size: 20px;
     border-radius: 15px !important;
     margin-left: 0px;
+                    margin-top: 13px;
+                    margin-bottom: 30px;
     height: 50px;
     padding-left: 23px;
     padding-right: 23px;
     padding-top: 9px;
+width: 90%;
+max-width: 442px;
       }
       
-      
-      #formX {
-text-align: left;
-      }
+
       
       
                         .gumbtn:hover {
-background: #962900;
+background: #b13507;
                           border: 1px solid #962900;
 
       }
@@ -805,12 +806,11 @@ height: 100px !important;
      <div id="formX">        
 <form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyRzssaS16KZFd7wdXo-jNBCQDbk-md_4ExQatEcspks1OzkUaLxt8amZN3QXsoE6XG/exec">
  
-  <input class="gum" name="Emailx" type="email" placeholder="Email" required>
-    <input class="gum" name="Telx" type="text" placeholder="Téléphone" required>
-  <input class="gum" name="Entreprisex" type="text" placeholder="Entreprise" required>
+  <input class="gum" name="Emailx" type="email" placeholder="Email" maxlength="35" required>
+    <input class="gum" name="Telx" type="text" placeholder="Téléphone" maxlength="35" required>
+  <input class="gum" name="Entreprisex" type="text" placeholder="Entreprise" maxlength="35" required>
   
-<textarea class="gum gumtxtplus f2" name="demandex" placeholder="Renseignements"></textarea><br>
-
+<textarea class="gum gumtxtplus f2" name="demandex" placeholder="Renseignements" maxlength="80"></textarea><br>
 
   <button type="submit" class="gumbtn science">Confirm</button>
 
