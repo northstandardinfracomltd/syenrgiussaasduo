@@ -1320,6 +1320,16 @@ margin-top: 15px;
         padding-right: 25px;
         z-index: 99999;
       }
+      
+      
+      @media only screen and (max-width: 767px) {
+      .container3 {
+        padding-left: 0px;
+        padding-right: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+      }
+      }
 
       /* Style de la colonne de gauche */
       .left-column3 {
@@ -1330,6 +1340,15 @@ margin-top: 15px;
         z-index: 9999999;
         text-align: left !important;
       }
+      
+      
+      
+      @media only screen and (max-width: 767px) {
+      .left-column3 {
+height: 230px;
+      }
+      
+}
 
       /* Style de la colonne de droite (accordéon) */
       .right-column3 {
@@ -1388,7 +1407,9 @@ margin-top: 15px;
       
       @media only screen and (max-width: 767px) {
       .left-column3 img {
-        max-width: 80%;
+      max-width: 93%;
+    margin-left: auto;
+    margin-right: auto;
       }
         
 }
@@ -1418,6 +1439,8 @@ margin-top: 15px;
         cursor: default;
       }
 
+
+      
       .til2 {
         font-size: 24px !important;
         font-family: "saasduoPAR" !important;
@@ -1434,6 +1457,18 @@ margin-top: 15px;
         line-height: 40px;
         cursor: default;
       }
+      
+      
+      
+      @media only screen and (max-width: 767px) {
+      .til2 {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+        
+}
+      
+      
     </style>
     <div class="carrelage-container">
       <div class="carrelage" id="carrelage"></div>
@@ -1675,6 +1710,8 @@ margin-top: 15px;
         margin-bottom: 80px;
         cursor: default;
         z-index: 99999 !important;
+                padding-left: 25px;
+        padding-right: 25px;
       }
 
       .cristalinefooterlink {
