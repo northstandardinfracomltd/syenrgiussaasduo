@@ -385,14 +385,38 @@
       }
 
       .column9spe {
-        text-align: left !important;
+        text-align: left;
         z-index: 999999999;
       }
 
+      
+      @media only screen and (max-width: 767px) {
+
+      .column9spe {
+        text-align: center;
+      }
+}
+      
+      
+            @media only screen and (max-width: 767px) {
+
+      .rink {
+        display: none;
+      }
+}
+      
+      
       .buttons-container9 {
         display: flex;
         justify-content: flex-end;
       }
+      
+      
+      @media only screen and (max-width: 767px) {
+      .buttons-container9 {
+        justify-content: center;
+      }
+}
 
       .button9 {
         margin-left: 10px;
@@ -882,7 +906,7 @@ margin-top: 15px;
             class="logo"
           />
         </div>
-        <div class="column9"></div>
+        <div class="column9 rink"></div>
         <div class="column9">
           <div class="buttons-container9">
             <button class="button firstbtn">Login</button>
@@ -1338,7 +1362,7 @@ margin-top: 15px;
         flex-direction: column;
         justify-content: left;
         z-index: 9999999;
-        text-align: left !important;
+        text-align: left;
       }
       
       
@@ -1346,6 +1370,8 @@ margin-top: 15px;
       @media only screen and (max-width: 767px) {
       .left-column3 {
 height: 230px;
+        justify-content: center;
+         text-align: center;
       }
       
 }
@@ -1435,11 +1461,17 @@ height: 230px;
         text-align: left !important;
         padding-top: 25px;
         margin-bottom: 20px !important;
-        margin-top: 45px !important;
+        margin-top: 45px;
         cursor: default;
       }
 
+@media only screen and (max-width: 767px) {
+      .til1 {
 
+                padding-left: 22px;
+        padding-right: 22px;
+      }
+}
       
       .til2 {
         font-size: 24px !important;
@@ -1750,6 +1782,7 @@ height: 230px;
       .footer-containerX {
         grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: repeat(4, 1fr);
+        margin-top: 380px;
       }
 }
 
