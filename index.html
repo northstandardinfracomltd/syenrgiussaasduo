@@ -530,6 +530,12 @@
     cursor: text;
       }
 
+      
+            .dropdown-inputS::placeholder {
+    color: #c5b0d8;
+      }
+      
+      
       .dropdown-listS {
         font-family: "saasduoPAR" !important;
         font-size: 24px;
@@ -829,7 +835,9 @@ margin-top: 15px;
       
       
           .linky {
-        text-decoration: none;
+        text-decoration: none !important;
+            color: #05f0ff !important;
+            cursor: pointer !important;
       }
     </style>
     <title>Centered Container</title>
@@ -1702,29 +1710,23 @@ height: 230px;
     <div class="sticky-cta-bar" id="maDiv">
       <div class="cta-text">
         <div class="sous-titreinfoable lazyload">
-          Nous utilisons des cookies et des technologies similaires pour
-          mémoriser vos préférences, comprendre votre parcours et mesurer
-          l'efficacité des fonctions. À l’aide de tiers (<a
+          We use cookies and similar technologies to remember your preferences, understand your journey, and measure the effectiveness of features. With the help of third parties (<a
             target="_blank"
             href="https://support.google.com/analytics/answer/12159447?hl=fr"
             class="linkcookies"
             >Google Analytics</a
           >
-          et
+          and
           <a target="_blank" href="https://saasduo.com/" class="linkcookies"
             >Nvidia</a
-          >) nous stockons des données dépersonnalisées pour récupérer des
-          statistiques et ainsi améliorer les performances de notre site. En
-          utilisant saasduo.com, vous acceptez l’utilisation de tous les cookies
-          et notre politique de confidentialité, ainsi nous vous invitons aussi
-          à la lecture de notre
+          >), we store depersonalized data to retrieve statistics and improve the performance of our site. By using saasduo.com, you agree to the use of all cookies and our privacy policy, so we also invite you to read our
           <a target="_blank" href="/confidentialite" class="linkcookies"
-            >politique de confidentialité.</a
+            >privacy policy.</a
           >
         </div>
       </div>
       <button class="fermerinfoable lazyload" onclick="masquerDiv()">
-        Fermer
+        Close
       </button>
 
       <script>
