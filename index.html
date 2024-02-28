@@ -534,13 +534,27 @@
         top: 100%;
         left: 0;
         width: 100%;
-        max-height: 300px;
+        max-height: 420px;
         overflow-y: auto;
         border: 1px solid #ccc;
         border-radius: 15px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         display: none;
         z-index: 30;
+        
+
+    letter-spacing: 0px !important;
+    color: #1b1b20;
+    letter-spacing: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+    max-width: 600px;
+    line-height: 40px;
+    cursor: default;
+    padding-bottom: 10px;
       }
 
       .dropdown-list-itemS {
@@ -552,7 +566,9 @@
       }
 
       .dropdown-list-itemS:hover {
-        background-color: #f0f0f0;
+           background: #ddffff;
+    color: #0066FF;
+        cursor: pointer !important;
       }
 
       .icon-button42 {
@@ -931,7 +947,7 @@ margin-top: 15px;
           <input type="text" class="dropdown-inputS" placeholder="Saisir ici" />
 
           <script>
-            var placeholders = ["Facility Management", "Fleet Management", "Learning Experience Platform", "E-commerce Platform", "CRM", "Inventory Management", "Supply Chain Management", "Business Intelligence", "Survey and Feedback", "Sales Enablement", "Customer Support", "Learning Management System", "Content Management System", "Membership Management", "Field Service Management", "Quality Management System", "Business Process Management", "Smart Cities Solutions", "Coworking Space Management", "Member Community Platform", "Telematics Solutions", "Spare Parts Management", "Equipment Maintenance", "Predictive Maintenance", "Computerized Maintenance System", "Building Management System", "Airport Operations Management", "Passenger Information System", "Retail Analytics Software", "Parking Management System", "SAMPLE", "SAMPLE", "SAMPLE", "SAMPLE", "SAMPLE"];
+            var placeholders = ["Facility Management", "Fleet Management", "Learning Experience Platform", "E-commerce Platform", "Information Management", "CRM", "Inventory Management", "Supply Chain Management", "Business Intelligence", "Survey and Feedback", "Sales Enablement", "Customer Support", "Startup SaaS", "Learning Management System", "Content Management System", "Membership Management", "Field Service Management", "Quality Management System", "Business Process Management", "Smart Cities Solutions", "Coworking Space Management", "Member Community Platform", "Telematics Solutions", "Spare Parts Management", "Equipment Maintenance", "Predictive Maintenance", "Computerized Maintenance System", "Building Management System", "Airport Operations Management", "Passenger Information System", "Retail Analytics Software", "Parking Management System"];
             var currentPlaceholderIndex = 0;
             var inputElement = document.querySelector(".dropdown-inputS");
 
@@ -960,16 +976,22 @@ margin-top: 15px;
 
           <div class="dropdown-listS">
             <div class="dropdown-list-itemS" onclick="openPopup()">
-              Un crabe rouge
+              Facility Management
             </div>
             <div class="dropdown-list-itemS" onclick="openPopup()">
-              Un arbre vert
+              E-commerce Platform
             </div>
             <div class="dropdown-list-itemS" onclick="openPopup()">
-              Un éléphant gris
+              Fleet Management
             </div>
             <div class="dropdown-list-itemS" onclick="openPopup()">
-              Un flamant rose
+              Business Intelligence
+            </div>
+            <div class="dropdown-list-itemS" onclick="openPopup()">
+              Startup SaaS
+            </div>
+                        <div class="dropdown-list-itemS" onclick="openPopup()">
+             Field Service Management
             </div>
           </div>
         </div>
