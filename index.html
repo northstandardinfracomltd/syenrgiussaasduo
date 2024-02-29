@@ -186,7 +186,7 @@
       .grid-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
         gap: 25px;
         padding: 20px;
         max-width: 1200px;
@@ -194,6 +194,18 @@
         margin-right: auto;
         margin-bottom: 5px;
       }
+      
+      
+
+      
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .grid-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(4, auto) !important;
+    max-width: 800px !important;
+      }
+}
+      
 
       @media only screen and (max-width: 767px) {
         .grid-container {
@@ -1539,7 +1551,7 @@
         padding-right: 40px;
         margin-left: auto;
         margin-right: auto;
-        text-align: left !important;
+        text-align: left;
         padding-top: 25px;
         margin-bottom: 20px !important;
         margin-top: 45px;
@@ -1560,7 +1572,8 @@
         .til1 {
           padding-left: 22px;
           padding-right: 22px;
-          margin-top: 95px;
+          margin-top: 145px;
+          text-align: center;
         }
 }
 
@@ -1573,7 +1586,7 @@
         padding-right: 42px;
         margin-left: auto;
         margin-right: auto;
-        text-align: left !important;
+        text-align: left;
         max-width: 1000px;
         font-weight: 400;
         color: #1b1b20 !important;
@@ -1587,6 +1600,16 @@
           padding-right: 25px;
         }
       }
+      
+      
+            
+      @media only screen and (max-width: 767px) and (orientation: landscape) {
+        .til2 {
+          text-align: center;
+        }
+}
+      
+      
     </style>
     <div class="carrelage-container">
       <div class="carrelage" id="carrelage"></div>
@@ -1875,6 +1898,16 @@
           margin-top: 500px;
         }
       }
+      
+      
+      
+      @media only screen and (max-width: 767px) and (orientation: landscape) {
+        .footer-containerX {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          margin-top: 270px;
+        }
+}
 
       .columnX {
         padding: 0px;
