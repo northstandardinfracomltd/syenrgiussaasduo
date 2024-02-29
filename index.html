@@ -122,6 +122,17 @@
         cursor: default;
         color: #fff;
       }
+      
+      
+      @media only screen and (max-width: 767px) {
+      .main-title {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+      }
+}
+      
+      
 
       .sub-title {
         margin-top: 10px;
@@ -189,8 +200,21 @@
           display: grid;
           grid-template-columns: repeat(1, 1fr);
           grid-template-rows: repeat(8, auto);
+          max-width: 425px;
         }
       }
+      
+      
+      @media only screen and (max-width: 767px) and (orientation: landscape) {
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(4, auto);
+          max-width: 580px;
+        }
+}
+      
+      
 
       .grid-item {
         text-align: center;
@@ -254,6 +278,7 @@
         .container2 {
           grid-template-columns: repeat(1, 1fr);
           grid-template-rows: repeat(4, 1fr);
+          max-width: 340px;
         }
       }
 
@@ -1287,6 +1312,7 @@
         .newsgrid {
           grid-template-columns: repeat(1, 1fr);
           grid-template-rows: repeat(3, 1fr);
+          max-width: 340px;
         }
       }
 
@@ -1484,6 +1510,16 @@
           margin-right: auto;
         }
       }
+      
+      
+      @media only screen and (max-width: 767px) and (orientation: landscape) {
+        .left-column3 img {
+          max-width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 55px;
+        }
+}
 
       .imgcustomers:hover {
         transform: scale(1.03);
@@ -1517,6 +1553,16 @@
           margin-top: 75px;
         }
       }
+      
+      
+      
+      @media only screen and (max-width: 767px) and (orientation: landscape) {
+        .til1 {
+          padding-left: 22px;
+          padding-right: 22px;
+          margin-top: 95px;
+        }
+}
 
       .til2 {
         font-size: 24px !important;
@@ -1826,7 +1872,7 @@
         .footer-containerX {
           grid-template-columns: repeat(1, 1fr);
           grid-template-rows: repeat(4, 1fr);
-          margin-top: 520px;
+          margin-top: 500px;
         }
       }
 
@@ -1834,6 +1880,13 @@
         padding: 0px;
         z-index: 9999;
       }
+      
+      
+      @media only screen and (max-width: 767px) {
+      .columnX {
+margin-top: 30px;
+      }
+}
 
       .fermerinfoable {
         background-color: #d93b01;
