@@ -1039,7 +1039,7 @@
                     method: "POST",
                     body: data,
                   }).then(() => {
-                    window.location.replace("/support/confirmation");
+                    window.location.replace("/20398203723780283217390028370921321");
                   });
                 });
               });
@@ -1591,8 +1591,8 @@
           padding-left: 0px;
           padding-right: 0px;
         grid-template-columns: 2fr 3fr;
-          grid-template-rows: repeat(2, 1fr);
-          max-width: 1000px;
+          grid-template-rows: repeat(1, 1fr);
+          max-width: 1080px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -1711,7 +1711,7 @@
           margin-left: auto !important;
           margin-right: auto !important;
             text-align: center !important;
-          margin-top: 55px;
+          margin-top: 120px;
         }
   
 }
@@ -2101,6 +2101,30 @@
         padding-left: 25px;
         padding-right: 25px;
       }
+      
+      
+      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+        .footer-containerX {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          margin-top: 35px;
+          max-width: 620px;
+        }
+  
+}
+
+/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+        .footer-containerX {
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          margin-top: 35px;
+          max-width: 1055px;
+        }
+}
+      
+      
 
       @media only screen and (max-width: 767px) {
         .footer-containerX {
@@ -2166,6 +2190,23 @@ margin-top: 30px;
         margin-right: auto;
         margin-top: 0px;
       }
+      
+      
+      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+
+        .footer-containerX2 {
+        max-width: 670px;
+      }
+  
+}
+
+/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+        .footer-containerX2 {
+        max-width: 1100px;
+      }
+}
 
       .columnX2 {
         padding: 0px;
