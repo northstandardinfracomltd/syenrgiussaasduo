@@ -349,6 +349,28 @@
           max-width: 340px;
         }
       }
+      
+      
+      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+        .container2 {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          max-width: 620px;
+        }
+}
+
+/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+        .container2 {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          max-width: 620px;
+        }
+}
+      
+      
+      
 
       .deskrib {
         vertical-align: middle;
@@ -1410,6 +1432,27 @@
         padding-left: 25px;
         padding-right: 25px;
       }
+      
+      
+      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+        .newsgrid {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          max-width: 340px;
+        }
+}
+
+/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+        .newsgrid {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          max-width: 980px;
+        }
+}
+      
+      
 
       @media only screen and (max-width: 767px) {
         .newsgrid {
@@ -1524,6 +1567,37 @@
         padding-right: 25px;
         z-index: 99999;
       }
+      
+      
+      
+      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+
+          .container3 {
+          padding-left: 0px;
+          padding-right: 0px;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+                      max-width: 700px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  
+}
+
+/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+        .container3 {
+          padding-left: 0px;
+          padding-right: 0px;
+        grid-template-columns: 2fr 3fr;
+          grid-template-rows: repeat(2, 1fr);
+          max-width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+}
+      
 
       @media only screen and (max-width: 767px) {
         .container3 {
@@ -1613,6 +1687,52 @@
           margin-right: auto;
         }
       }
+      
+      
+      
+      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+
+          .left-column3 img {
+          max-width: 600px;
+          margin-left: auto !important;
+          margin-right: auto !important;
+            text-align: center !important;
+          margin-top: 55px;
+        }
+  
+  
+}
+
+/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+        .left-column3 img {
+          max-width: 500px;
+          margin-left: auto !important;
+          margin-right: auto !important;
+            text-align: center !important;
+          margin-top: 55px;
+        }
+  
+}
+      
+      
+      
+      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+        .left-column3 {
+    justify-content: center !important;
+    text-align: center !important;
+        }
+}
+
+/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+        .left-column3 {
+    justify-content: center !important;
+    text-align: center !important;
+        }}
+      
       
       
       @media only screen and (max-width: 767px) and (orientation: landscape) {
