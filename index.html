@@ -955,7 +955,31 @@
         padding-bottom: 10px;
         width: 90%;
         max-width: 442px;
+             position: relative;
+      overflow: hidden;
       }
+      
+      
+    .gumbtn.loading::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #ddd 25%, #ddd 50%, #fff 50%, #fff 75%, #ddd 75%, #ddd 100%);
+      background-size: 200% 200%;
+      animation: loading 1.5s infinite;
+    }
+
+    @keyframes loading {
+      from {
+        background-position: 200% 0;
+      }
+      to {
+        background-position: -200% -200%;
+      }
+    }
 
       
       @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -1064,7 +1088,7 @@
               class="gum"
               name="Telx"
               type="text"
-              placeholder="Téléphone"
+              placeholder="Phone"
               maxlength="35"
               required
             />
@@ -1072,7 +1096,7 @@
               class="gum"
               name="Entreprisex"
               type="text"
-              placeholder="Entreprise"
+              placeholder="Company"
               maxlength="35"
               required
             />
@@ -1080,12 +1104,14 @@
             <textarea
               class="gum gumtxtplus f2"
               name="demandex"
-              placeholder="Renseignements"
-              maxlength="80"
+              placeholder="Request summary"
+              maxlength="400"
             ></textarea
             ><br />
 
             <button type="submit" class="gumbtn">Submit</button>
+            
+            
 
             <script type="text/javascript">
               window.addEventListener("DOMContentLoaded", function () {
@@ -1463,7 +1489,9 @@
     </div>
 
     <style>
-      .til1x {
+      
+      
+            .til1x {
         vertical-align: middle;
         text-align: center;
         font-size: 24px !important;
