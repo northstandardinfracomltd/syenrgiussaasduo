@@ -83,7 +83,7 @@
         );
         top: 0;
         left: -100px;
-        animation: shine 3s infinite linear; /* Animation */
+        animation: shine 3s infinite linear;
       }
 
       @keyframes shine {
@@ -125,7 +125,7 @@
       
       
       
-      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+   
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
       .main-title {
     max-width: 500px;
@@ -134,7 +134,7 @@
       }
 }
 
-/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
       .main-title {
     max-width: 900px;
@@ -147,7 +147,7 @@
       
       
             
-      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
       .sub-title {
     max-width: 700px !important;
@@ -156,7 +156,7 @@
       }
 }
 
-/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
       .sub-title {
     max-width: 900px !important;
@@ -241,7 +241,7 @@
       
     
       
-      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
       .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -251,7 +251,7 @@
       
       }
 
-/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
       .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -305,7 +305,7 @@
       }
 
       .icon {
-        width: 50px; /* Ajustez la taille de l'icône selon vos besoins */
+        width: 50px; 
         height: 50px;
         margin-top: 12px;
         margin-bottom: 6px;
@@ -323,7 +323,7 @@
         cursor: default;
       }
 
-      /* Style général du conteneur grid */
+   
       .parkles {
         background: linear-gradient(180deg, #ffffffd6 10%, #ffffff00 90%);
       }
@@ -351,7 +351,7 @@
       }
       
       
-      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
         .container2 {
           grid-template-columns: repeat(1, 1fr);
@@ -360,7 +360,7 @@
         }
 }
 
-/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
         .container2 {
           grid-template-columns: repeat(1, 1fr);
@@ -476,7 +476,7 @@
       
         
       
-      /* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
       .container9 {
     max-width: 1000px;
@@ -791,11 +791,11 @@
         width: 100%;
         height: 100vh;
 
-        background: #a0a0a015 !important; /* I found this color of blur to work for me better*/
+        background: #a0a0a015 !important;
         -webkit-backdrop-filter: blur(
           5px
-        ) !important; /* Add this line first, it fixes blur for Safari*/
-        backdrop-filter: blur(5px) !important; /* This line activates blur*/
+        ) !important;
+        backdrop-filter: blur(5px) !important;
       }
 
       #internalpop {
@@ -820,7 +820,7 @@
       }
 }
 
-/* Styles pour les écrans mobiles en mode paysage (jusqu'à 767 pixels de large) */
+
 @media only screen and (max-width: 767px) and (orientation: landscape) {
               #internalpop {
       width: 340px !important;
@@ -891,7 +891,7 @@
         
 }
 
-/* Styles pour les écrans mobiles en mode paysage (jusqu'à 767 pixels de large) */
+
 @media only screen and (max-width: 767px) and (orientation: landscape) {
               .gum {
         width: 78% !important;
@@ -971,7 +971,7 @@
       }
 }
 
-/* Styles pour les écrans mobiles en mode paysage (jusqu'à 767 pixels de large) */
+      
 @media only screen and (max-width: 767px) and (orientation: landscape) {
 
             .gumbtn {
@@ -1015,7 +1015,7 @@
         margin-right: auto;
       }
 
-      /* Ajoutez cette règle CSS au bloc style existant dans l'en-tête de votre document */
+
       .blur-background {
         position: fixed;
         top: 0;
@@ -1027,15 +1027,15 @@
           0,
           0,
           0.5
-        ); /* 0.5 pour une opacité de 50% (ajustez selon vos préférences) */
-        z-index: 1; /* Assure que l'arrière-plan flou est au-dessus de tout le reste, sauf le popup */
+        ); 
+        z-index: 1; 
         display: none;
       }
 
-      /* Ajoutez cette règle pour ajuster le positionnement du popup lorsqu'il est ouvert */
+
       #popup-container.open {
         display: block;
-        z-index: 2; /* Assure que le popup est au-dessus de l'arrière-plan flou */
+        z-index: 2; 
       }
 
       .gumtxtplus {
@@ -1268,11 +1268,11 @@
               }
             });
 
-            // Ajouter le dernier item personnalisé
+
             const customItem = document.createElement("div");
             customItem.className = "dropdown-list-itemS";
             customItem.innerText = inputValue;
-            customItem.onclick = openPopup; // Utilisation de la fonction openPopup() lors du clic
+            customItem.onclick = openPopup; 
             dropdownList.appendChild(customItem);
           });
 
@@ -1303,7 +1303,7 @@
 
     <div class="purple">
       <div class="grid-container">
-        <!-- Première ligne -->
+     
         <div class="grid-item">
           <img
             src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/saasduo000001.svg?v=1709115979852"
@@ -1366,7 +1366,7 @@
             Editing of files such as illustrations and icons
           </div>
         </div>
-        <!-- Deuxième ligne -->
+     
         <div class="grid-item">
           <img
             src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/saasduo000008.svg?v=1709115983269"
@@ -1383,7 +1383,7 @@
     <div class="dot-background">
       <div class="parkles">
         <div class="container2">
-          <!-- Première div interne -->
+          
           <div class="item2">
             <img
               src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20What20We20Offer.svg?v=1708895911225"
@@ -1394,7 +1394,7 @@
             </p>
           </div>
 
-          <!-- Deuxième div interne -->
+        
           <div class="item2">
             <img
               src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20Your20Fav20Tools.svg?v=1708895912975"
@@ -1405,7 +1405,7 @@
             </p>
           </div>
 
-          <!-- Troisième div interne -->
+        
           <div class="item2">
             <img
               src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20Any20Browsers.svg?v=1708895902633"
@@ -1416,7 +1416,7 @@
             </p>
           </div>
 
-          <!-- Quatrième div interne -->
+   
           <div class="item2">
             <img
               src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/SaaSduo20Illustration20Only20C2A302C0120Per20Log.svg?v=1708895910281"
@@ -1431,7 +1431,7 @@
     </div>
 
     <div class="newsgrid">
-      <!-- Colonne de gauche -->
+ 
       <div class="newsgridcol vert">
         <div class="placeimg2">
           <img
@@ -1508,7 +1508,7 @@
       }
       
       
-      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
         .newsgrid {
           grid-template-columns: repeat(1, 1fr);
@@ -1517,7 +1517,7 @@
         }
 }
 
-/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
         .newsgrid {
           grid-template-columns: repeat(3, 1fr);
@@ -1590,7 +1590,7 @@
         position: relative;
         width: 100%;
         overflow: hidden;
-        background-color: #fff; /* Couleur de fond derrière le carrelage */
+        background-color: #fff; 
       }
 
       .carrelage {
@@ -1604,12 +1604,12 @@
             transparent 1px
           ),
           linear-gradient(to bottom, #d6ddffc7 1px, transparent 1px);
-        pointer-events: none; /* Pour permettre aux événements de souris de passer à travers le carrelage */
+        pointer-events: none; 
       }
 
       .content99 {
         position: relative;
-        z-index: 1; /* Pour que le contenu apparaisse au-dessus du carrelage */
+        z-index: 1;
         padding: 20px;
       }
 
@@ -1620,14 +1620,14 @@
         position: absolute;
       }
 
-      /* Styles pour les carrés remplis aléatoirement */
+
       .carre.rempli {
-        background-color: #d6ddff52; /* Couleur de remplissage */
+        background-color: #d6ddff52; 
         margin-left: 1px;
         margin-top: 1px;
       }
 
-      /* Style général du conteneur grid */
+   
       .container3 {
         display: grid;
         grid-template-columns: 2fr 3fr;
@@ -1644,7 +1644,7 @@
       
       
       
-      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
 
           .container3 {
@@ -1659,7 +1659,7 @@
   
 }
 
-/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
         .container3 {
           padding-left: 0px;
@@ -1682,9 +1682,9 @@
         }
       }
 
-      /* Style de la colonne de gauche */
+ 
       .left-column3 {
-        /* Pour centrer verticalement le contenu */
+      
         display: block;
         flex-direction: column;
         justify-content: left;
@@ -1700,9 +1700,9 @@
         }
       }
 
-      /* Style de la colonne de droite (accordéon) */
+     
       .right-column3 {
-        /* Pour centrer verticalement le contenu */
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1711,13 +1711,13 @@
         padding-bottom: 50px;
       }
 
-      /* Style de l'accordéon */
+   
       .accordion3 {
         display: flex;
         flex-direction: column;
       }
 
-      /* Style des items de l'accordéon */
+   
       .accordion-item3 {
         margin-bottom: 10px;
         border: 0px solid transparent;
@@ -1726,14 +1726,14 @@
         background: #06f;
       }
 
-      /* Style des titres des items */
+     
       .accordion-item-title3 {
         background: #06f;
         padding: 10px;
         cursor: pointer;
       }
 
-      /* Style des contenus des items (initialement cachés) */
+     
       .accordion-item-content3 {
         display: none;
         padding: 10px;
@@ -1745,7 +1745,7 @@
         text-align: center;
       }
 
-      /* Style de l'image */
+ 
       .left-column3 img {
         margin-top: 82px;
         margin-bottom: 0px;
@@ -1764,7 +1764,7 @@
       
       
       
-      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
 
           .left-column3 img {
@@ -1778,7 +1778,7 @@
   
 }
 
-/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
         .left-column3 img {
           max-width: 500px;
@@ -1792,7 +1792,7 @@
       
       
       
-      /* Styles pour les tablettes en mode portrait (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
         .left-column3 {
     justify-content: center !important;
@@ -1800,7 +1800,7 @@
         }
 }
 
-/* Styles pour les tablettes en mode paysage (768 à 1023 pixels de large) */
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
         .left-column3 {
     justify-content: center !important;
@@ -1902,19 +1902,19 @@
         <script>
           document.addEventListener("DOMContentLoaded", function () {
             var carrelage = document.getElementById("carrelage");
-            var totalCarres = 35; // 10 carrés en largeur et hauteur
-            var pourcentageRemplissage = 20; // Pourcentage de carrés remplis
+            var totalCarres = 35; 
+            var pourcentageRemplissage = 20; 
 
-            // Générer une liste de carrés
+           
             var carres = [];
             for (var i = 0; i < totalCarres * totalCarres; i++) {
               carres.push(i);
             }
 
-            // Mélanger la liste de carrés
+          
             shuffle(carres);
 
-            // Remplir les premiers pourcentageRemplissage carrés
+           
             for (
               var i = 0;
               i < totalCarres * totalCarres * (pourcentageRemplissage / 100);
@@ -1932,7 +1932,7 @@
             }
           });
 
-          // Fonction pour mélanger un tableau
+       
           function shuffle(array) {
             for (var i = array.length - 1; i > 0; i--) {
               var j = Math.floor(Math.random() * (i + 1));
@@ -1944,7 +1944,7 @@
         </script>
 
         <div class="container3">
-          <!-- Colonne de gauche -->
+          
           <div class="left-column3">
             <img
               src="https://cdn.glitch.global/fa30f0cd-1252-43f9-a13b-898f58db6b19/CustomersLogoSaaSduo.svg?v=1709038099245"
@@ -2046,14 +2046,14 @@
       </div>
     </div>
     <script>
-      // Fonction pour basculer l'état de l'accordéon (ouvrir/fermer)
+     
       function toggleAccordion(title) {
         const content = title.nextElementSibling;
         if (content.style.display === "block") {
           content.style.display = "none";
         } else {
           content.style.display = "block";
-          // Fermer les autres items ouverts
+          
           const allContents = document.querySelectorAll(
             ".accordion-item-content3"
           );
