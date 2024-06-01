@@ -1686,6 +1686,35 @@ width: 100%;
         margin-top: 0px;
       }
       
+      
+                    .science {
+        position: relative;
+    overflow: hidden;}
+            
+      .science:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        90deg,
+        rgba(5, 240, 255, 0) 10%,
+        rgba(5, 240, 255, .1),
+        rgba(5, 240, 255, 0) 100%
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear; /* Animation */
+}
+      
+      @keyframes shine {
+    0% {left: -100px}
+    20% {left: 100%}
+    100% {left: 100%}
+}
+      
+      
+      
     </style>
     <title>Grid Divs Example</title>
 </head>
@@ -1804,8 +1833,8 @@ width: 100%;
           <a href="/" class="cristalinefooterlink" >
             <button class="CTAlog3">Français FR</button></a>
           <a href="https://wa.me/447723501018" class="cristalinefooterlink" target="_blank">
-                      <button class="CTAlog2" >Open a chat with a specialist</button></a>
-            <button class="CTAlog" onclick="openPopup()">Request callback</button>
+                      <button class="CTAlog2 science" >Open a chat with a specialist</button></a>
+            <button class="CTAlog science" onclick="openPopup()">Request callback</button>
         </div>
     </div> </div> </div>
   
@@ -2442,7 +2471,7 @@ toggleBtn2999.textContent = "Read";
   
   </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Contact us</button>
+<button onclick="openPopup()" class="button button-CC1">Contact us</button>
 </div></div>
 <a href="https://luggit.app/" target="_blank" style="text-decoration: none; color: inherit;">
   <div class="clientband">
@@ -2451,7 +2480,7 @@ toggleBtn2999.textContent = "Read";
     </div>
     <div class="clientband1">
       <div class="imineos cas1">Client case Luggit for Bus Terrace Technologies</div>
-      <button class="button button-CC1case1 science">Discover Luggit</button>
+      <button class="button button-CC1case1">Discover Luggit</button>
     </div>
   </div>
 </a>
@@ -2493,7 +2522,7 @@ toggleBtn2999w.textContent = "Read";
   
   </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Contact us</button>
+<button onclick="openPopup()" class="button button-CC1">Contact us</button>
 </div></div>
 <a href="https://www.pret.co.uk/en-GB" target="_blank" style="text-decoration: none; color: inherit;">
   <div class="clientband">
@@ -2502,7 +2531,7 @@ toggleBtn2999w.textContent = "Read";
     </div>
     <div class="clientband1">
       <div class="imineos cas1">Client case Pret for JAB Holdings</div>
-      <button class="button button-CC1case1 science">Discover Pret</button>
+      <button class="button button-CC1case1">Discover Pret</button>
     </div>
   </div>
 </a>
@@ -2547,7 +2576,7 @@ toggleBtn2999wx.textContent = "Read";
   
   </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Contact us</button>
+<button onclick="openPopup()" class="button button-CC1">Contact us</button>
 </div></div>
 <a href="https://unox.no/" target="_blank" style="text-decoration: none; color: inherit;">
   <div class="clientband">
@@ -2556,7 +2585,7 @@ toggleBtn2999wx.textContent = "Read";
     </div>
     <div class="clientband1">
       <div class="imineos cas1">Client case Uno-X for Reitan Retail</div>
-      <button class="button button-CC1case1 science">Discover Uno-X</button>
+      <button class="button button-CC1case1">Discover Uno-X</button>
     </div>
   </div>
 </a>
@@ -2596,7 +2625,7 @@ toggleBtn2999wk.textContent = "Read";
   
   </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Contact us</button>
+<button onclick="openPopup()" class="button button-CC1">Contact us</button>
 </div></div>
 <a href="https://www.kier.co.uk/" target="_blank" style="text-decoration: none; color: inherit;">
   <div class="clientband">
@@ -2605,7 +2634,7 @@ toggleBtn2999wk.textContent = "Read";
     </div>
     <div class="clientband1">
       <div class="imineos cas1">Client case Kier for Kier Group PLC</div>
-      <button class="button button-CC1case1 science">Discover Kier</button>
+      <button class="button button-CC1case1">Discover Kier</button>
     </div>
   </div>
 </a>
@@ -2643,7 +2672,7 @@ toggleBtn2999wk.textContent = "Read";
               Customized features and interfaces for SMEs and industry leaders in SaaS and PaaS
             </p>
             
-            <button onclick="openPopup()" class="button button-CC1case99 science">Contact us</button>
+            <button onclick="openPopup()" class="button button-CC1case99">Contact us</button>
           </div>
 
         
@@ -2655,7 +2684,7 @@ toggleBtn2999wk.textContent = "Read";
             <p class="deskrib">
               Pay only for what you use, with transparent and predictive billing starting from £0.01 per log (1)
             </p>
-            <button onclick="openPopup()" class="button button-CC1case99 science">Contact us</button>
+            <button onclick="openPopup()" class="button button-CC1case99">Contact us</button>
           </div>
 
         
@@ -2667,7 +2696,7 @@ toggleBtn2999wk.textContent = "Read";
             <p class="deskrib">
              Synchronization of your favorite tools and integration of third-party partner API services
             </p>
-            <button onclick="openPopup()" class="button button-CC1case99 science">Contact us</button>
+            <button onclick="openPopup()" class="button button-CC1case99">Contact us</button>
           </div>
 
    
@@ -2679,7 +2708,7 @@ toggleBtn2999wk.textContent = "Read";
             <p class="deskrib">
               No download required with accessibility from a web browser, unless otherwise requested
             </p>
-          <button onclick="openPopup()" class="button button-CC1case99 science">Contact us</button>
+          <button onclick="openPopup()" class="button button-CC1case99">Contact us</button>
           </div>
           
           

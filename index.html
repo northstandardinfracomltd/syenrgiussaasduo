@@ -1686,6 +1686,36 @@ width: 100%;
         margin-top: 0px;
       }
       
+      
+      
+                    .science {
+        position: relative;
+    overflow: hidden;}
+            
+      .science:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        90deg,
+        rgba(5, 240, 255, 0) 10%,
+        rgba(5, 240, 255, .1),
+        rgba(5, 240, 255, 0) 100%
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear; /* Animation */
+}
+      
+      @keyframes shine {
+    0% {left: -100px}
+    20% {left: 100%}
+    100% {left: 100%}
+}
+      
+      
+      
     </style>
     <title>Grid Divs Example</title>
 </head>
@@ -1804,8 +1834,8 @@ width: 100%;
           <a href="/uk" class="cristalinefooterlink" >
             <button class="CTAlog3">English UK</button></a>
           <a href="https://wa.me/447723501018" class="cristalinefooterlink" target="_blank">
-                      <button class="CTAlog2" >Ouvrir un chat avec un spécialiste</button></a>
-            <button class="CTAlog" onclick="openPopup()">Être rappelé</button>
+                      <button class="CTAlog2 science" >Ouvrir un chat avec un spécialiste</button></a>
+            <button class="CTAlog science" onclick="openPopup()">Être rappelé</button>
         </div>
     </div> </div> </div>
   
@@ -2442,7 +2472,7 @@ toggleBtn2999.textContent = "Lire";
   
   </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Nous contacter</button>
+<button onclick="openPopup()" class="button button-CC1">Nous contacter</button>
 </div></div>
 <a href="https://luggit.app/" target="_blank" style="text-decoration: none; color: inherit;">
   <div class="clientband">
@@ -2451,7 +2481,7 @@ toggleBtn2999.textContent = "Lire";
     </div>
     <div class="clientband1">
       <div class="imineos cas1">Cas client Luggit pour Bus Terrace Technologies</div>
-      <button class="button button-CC1case1 science">Découvrir Luggit</button>
+      <button class="button button-CC1case1">Découvrir Luggit</button>
     </div>
   </div>
 </a>
@@ -2493,7 +2523,7 @@ toggleBtn2999w.textContent = "Lire";
   
   </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Nous contacter</button>
+<button onclick="openPopup()" class="button button-CC1">Nous contacter</button>
 </div></div>
 <a href="https://www.pret.co.uk/en-GB" target="_blank" style="text-decoration: none; color: inherit;">
   <div class="clientband">
@@ -2502,7 +2532,7 @@ toggleBtn2999w.textContent = "Lire";
     </div>
     <div class="clientband1">
       <div class="imineos cas1">Cas client Pret pour JAB Holdings</div>
-      <button class="button button-CC1case1 science">Découvrir Pret</button>
+      <button class="button button-CC1case1">Découvrir Pret</button>
     </div>
   </div>
 </a>
@@ -2547,7 +2577,7 @@ toggleBtn2999wx.textContent = "Lire";
   
   </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Nous contacter</button>
+<button onclick="openPopup()" class="button button-CC1">Nous contacter</button>
 </div></div>
 <a href="https://unox.no/" target="_blank" style="text-decoration: none; color: inherit;">
   <div class="clientband">
@@ -2556,7 +2586,7 @@ toggleBtn2999wx.textContent = "Lire";
     </div>
     <div class="clientband1">
       <div class="imineos cas1">Cas client Uno-X pour Reitan Retail</div>
-      <button class="button button-CC1case1 science">Découvrir Uno-X</button>
+      <button class="button button-CC1case1">Découvrir Uno-X</button>
     </div>
   </div>
 </a>
@@ -2596,7 +2626,7 @@ toggleBtn2999wk.textContent = "Lire";
   
   </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Nous contacter</button>
+<button onclick="openPopup()" class="button button-CC1">Nous contacter</button>
 </div></div>
 <a href="https://www.kier.co.uk/" target="_blank" style="text-decoration: none; color: inherit;">
   <div class="clientband">
@@ -2605,7 +2635,7 @@ toggleBtn2999wk.textContent = "Lire";
     </div>
     <div class="clientband1">
       <div class="imineos cas1">Cas client Kier pour Kier Group PLC</div>
-      <button class="button button-CC1case1 science">Découvrir Kier</button>
+      <button class="button button-CC1case1">Découvrir Kier</button>
     </div>
   </div>
 </a>
@@ -2643,7 +2673,7 @@ toggleBtn2999wk.textContent = "Lire";
               SaaS et PaaS aux fonctionnalités et interfaces personnalisées pour les PME et les leaders de l'industrie
             </p>
             
-            <button onclick="openPopup()" class="button button-CC1case99 science">Nous contacter</button>
+            <button onclick="openPopup()" class="button button-CC1case99">Nous contacter</button>
           </div>
 
         
@@ -2655,7 +2685,7 @@ toggleBtn2999wk.textContent = "Lire";
             <p class="deskrib">
               Ne payez que ce que vous utilisez, facturation prédictive et transparente à partir de £0,01 par log (1)
             </p>
-            <button onclick="openPopup()" class="button button-CC1case99 science">Nous contacter</button>
+            <button onclick="openPopup()" class="button button-CC1case99">Nous contacter</button>
           </div>
 
         
@@ -2667,7 +2697,7 @@ toggleBtn2999wk.textContent = "Lire";
             <p class="deskrib">
              Synchronisation de vos outils favoris et intégration des services API de partenaires tiers
             </p>
-            <button onclick="openPopup()" class="button button-CC1case99 science">Nous contacter</button>
+            <button onclick="openPopup()" class="button button-CC1case99">Nous contacter</button>
           </div>
 
    
@@ -2679,7 +2709,7 @@ toggleBtn2999wk.textContent = "Lire";
             <p class="deskrib">
               Aucun téléchargement requis avec l'accessibilité depuis un navigateur web, sauf demande contraire
             </p>
-          <button onclick="openPopup()" class="button button-CC1case99 science">Nous contacter</button>
+          <button onclick="openPopup()" class="button button-CC1case99">Nous contacter</button>
           </div>
           
           
